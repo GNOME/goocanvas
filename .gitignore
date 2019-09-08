@@ -31,6 +31,7 @@ Makefile.in
 /demo/mv-scalability-demo
 /demo/mv-simple-demo
 /demo/mv-table-demo
+/demo/mv-rotate-skew-demo
 /demo/scalability-demo
 /demo/simple-demo
 /demo/table-demo
