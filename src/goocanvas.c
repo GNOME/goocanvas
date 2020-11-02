@@ -3500,7 +3500,7 @@ goo_canvas_grab_focus (GooCanvas     *canvas,
  * @canvas: a #GooCanvas.
  * @item: the item to grab the pointer for.
  * @event_mask: the events to receive during the grab.
- * @cursor: the cursor to display during the grab, or NULL.
+ * @cursor: (nullable): the cursor to display during the grab, or NULL.
  * @time: the time of the event that lead to the pointer grab. This should
  *  come from the relevant #GdkEvent.
  *
