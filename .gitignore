@@ -29,10 +29,12 @@ Makefile.in
 /demo/mv-demo
 /demo/mv-generic-position-demo
 /demo/mv-scalability-demo
+/demo/mv-radii-demo
 /demo/mv-simple-demo
 /demo/mv-table-demo
 /demo/mv-rotate-skew-demo
 /demo/scalability-demo
+/demo/radii-demo
 /demo/simple-demo
 /demo/table-demo
 /demo/units-demo

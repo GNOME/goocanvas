@@ -11,7 +11,7 @@ DEMO_LIBS = $(top_builddir)/src/libgoocanvas-3.0.la @PACKAGE_LIBS@ $(INTLLIBS) -
 #	-DGDK_DISABLE_DEPRECATED -DGDK_PIXBUF_DISABLE_DEPRECATED \
 #	-DGTK_DISABLE_DEPRECATED
 
-noinst_PROGRAMS = demo table-demo generic-position-demo simple-demo scalability-demo units-demo widgets-demo mv-demo mv-table-demo mv-generic-position-demo mv-simple-demo mv-scalability-demo mv-rotate-skew-demo
+noinst_PROGRAMS = demo table-demo generic-position-demo radii-demo simple-demo scalability-demo units-demo widgets-demo mv-demo mv-table-demo mv-generic-position-demo mv-radii-demo mv-simple-demo mv-scalability-demo mv-rotate-skew-demo
 
 demo_SOURCES = \
 	demo.c demo-fifteen.c demo-scalability.c demo-grabs.c \
@@ -39,6 +39,16 @@ mv_table_demo_SOURCES = \
 	mv-table-demo.c
 
 mv_table_demo_LDADD = $(DEMO_LIBS)
+
+radii_demo_SOURCES = \
+	radii-demo.c
+
+radii_demo_LDADD = $(DEMO_LIBS)
+
+mv_radii_demo_SOURCES = \
+	mv-radii-demo.c
+
+mv_radii_demo_LDADD = $(DEMO_LIBS)
 
 simple_demo_SOURCES = \
 	simple-demo.c
