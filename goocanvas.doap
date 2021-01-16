@@ -6,8 +6,10 @@
 
   <name xml:lang="en">Goocanvas</name>
   <shortdesc xml:lang="en">Canvas widget for GTK+, for object-oriented 2D graphics</shortdesc>
-  <homepage rdf:resource="http://live.gnome.org/GooCanvas" />
+  <homepage rdf:resource="https://wiki.gnome.org/Projects/GooCanvas" />
   <mailing-list rdf:resource="http://mail.gnome.org/mailman/listinfo/goocanvas-list" />
+  <bug-database rdf:resource="https://gitlab.gnome.org/GNOME/goocanvas/issues" />
+  <download-page rdf:resource="http://download.gnome.org/sources/goocanvas/" />
 
   <maintainer>
     <foaf:Person>
@@ -15,6 +17,7 @@
       <gnome:userid>damon</gnome:userid>
     </foaf:Person>
   </maintainer>
+
   <maintainer>
     <foaf:Person>
       <foaf:name>Alberto Fanjul Alonso</foaf:name>
