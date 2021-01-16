@@ -17,7 +17,9 @@ G_BEGIN_DECLS
 typedef struct _GooCanvasRectData   GooCanvasRectData;
 struct _GooCanvasRectData
 {
-  gdouble x, y, width, height, radius_x, radius_y;
+  gdouble x, y, width, height, radius_x, radius_y,
+  radius_top_left_x, radius_top_left_y, radius_top_right_x, radius_top_right_y,
+  radius_bottom_right_x, radius_bottom_right_y, radius_bottom_left_x, radius_bottom_left_y;
 };
 
 

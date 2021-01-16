@@ -40,7 +40,15 @@ enum {
   PROP_WIDTH,
   PROP_HEIGHT,
   PROP_RADIUS_X,
-  PROP_RADIUS_Y
+  PROP_RADIUS_Y,
+  PROP_RADIUS_TOP_LEFT_X,
+  PROP_RADIUS_TOP_LEFT_Y,
+  PROP_RADIUS_TOP_RIGHT_X,
+  PROP_RADIUS_TOP_RIGHT_Y,
+  PROP_RADIUS_BOTTOM_RIGHT_X,
+  PROP_RADIUS_BOTTOM_RIGHT_Y,
+  PROP_RADIUS_BOTTOM_LEFT_X,
+  PROP_RADIUS_BOTTOM_LEFT_Y
 };
 
 
@@ -96,6 +104,62 @@ goo_canvas_rect_install_common_properties (GObjectClass *gobject_class)
 				   g_param_spec_double ("radius_y",
 							_("Radius Y"),
 							_("The vertical radius to use for rounded corners"),
+							0.0, G_MAXDOUBLE, 0.0,
+							G_PARAM_READWRITE));
+
+  g_object_class_install_property (gobject_class, PROP_RADIUS_TOP_LEFT_X,
+				   g_param_spec_double ("radius_top_left_x",
+							_("Radius Top Left X"),
+							_("The horizontal top left radius to use for rounded corners"),
+							0.0, G_MAXDOUBLE, 0.0,
+							G_PARAM_READWRITE));
+
+  g_object_class_install_property (gobject_class, PROP_RADIUS_TOP_LEFT_Y,
+				   g_param_spec_double ("radius_top_left_y",
+							_("Radius Top Left Y"),
+							_("The vertical top left radius to use for rounded corners"),
+							0.0, G_MAXDOUBLE, 0.0,
+							G_PARAM_READWRITE));
+
+  g_object_class_install_property (gobject_class, PROP_RADIUS_TOP_RIGHT_X,
+				   g_param_spec_double ("radius_top_right_x",
+							_("Radius Top Right X"),
+							_("The horizontal top right radius to use for rounded corners"),
+							0.0, G_MAXDOUBLE, 0.0,
+							G_PARAM_READWRITE));
+
+  g_object_class_install_property (gobject_class, PROP_RADIUS_TOP_RIGHT_Y,
+				   g_param_spec_double ("radius_top_right_y",
+							_("Radius Top Right Y"),
+							_("The vertical top right radius to use for rounded corners"),
+							0.0, G_MAXDOUBLE, 0.0,
+							G_PARAM_READWRITE));
+
+  g_object_class_install_property (gobject_class, PROP_RADIUS_BOTTOM_RIGHT_X,
+				   g_param_spec_double ("radius_bottom_right_x",
+							_("Radius Bottom Right X"),
+							_("The horizontal bottom right radius to use for rounded corners"),
+							0.0, G_MAXDOUBLE, 0.0,
+							G_PARAM_READWRITE));
+
+  g_object_class_install_property (gobject_class, PROP_RADIUS_BOTTOM_RIGHT_Y,
+				   g_param_spec_double ("radius_bottom_right_y",
+							_("Radius Bottom Right"),
+							_("The vertical bottom right radius to use for rounded corners"),
+							0.0, G_MAXDOUBLE, 0.0,
+							G_PARAM_READWRITE));
+
+  g_object_class_install_property (gobject_class, PROP_RADIUS_BOTTOM_LEFT_X,
+				   g_param_spec_double ("radius_bottom_left_x",
+							_("Radius Bottom Left X"),
+							_("The horizontal bottom left radius to use for rounded corners"),
+							0.0, G_MAXDOUBLE, 0.0,
+							G_PARAM_READWRITE));
+
+  g_object_class_install_property (gobject_class, PROP_RADIUS_BOTTOM_LEFT_Y,
+				   g_param_spec_double ("radius_bottom_left_y",
+							_("Radius Bottom Left Y"),
+							_("The vertical bottom left radius to use for rounded corners"),
 							0.0, G_MAXDOUBLE, 0.0,
 							G_PARAM_READWRITE));
 }
@@ -158,6 +222,14 @@ goo_canvas_rect_new (GooCanvasItem *parent,
   rect_data->height = height;
   rect_data->radius_x = 0;
   rect_data->radius_y = 0;
+  rect_data->radius_top_right_x = 0;
+  rect_data->radius_top_right_y = 0;
+  rect_data->radius_top_left_x = 0;
+  rect_data->radius_top_left_y = 0;
+  rect_data->radius_bottom_right_x = 0;
+  rect_data->radius_bottom_right_y = 0;
+  rect_data->radius_bottom_left_x = 0;
+  rect_data->radius_bottom_left_y = 0;
 
   va_start (var_args, height);
   first_property = va_arg (var_args, char*);
@@ -218,6 +290,30 @@ goo_canvas_rect_get_common_property (GObject              *object,
     case PROP_RADIUS_Y:
       g_value_set_double (value, rect_data->radius_y);
       break;
+    case PROP_RADIUS_TOP_LEFT_X:
+      g_value_set_double (value, rect_data->radius_top_left_x);
+      break;
+    case PROP_RADIUS_TOP_LEFT_Y:
+      g_value_set_double (value, rect_data->radius_top_left_y);
+      break;
+    case PROP_RADIUS_TOP_RIGHT_X:
+      g_value_set_double (value, rect_data->radius_top_right_x);
+      break;
+    case PROP_RADIUS_TOP_RIGHT_Y:
+      g_value_set_double (value, rect_data->radius_top_right_y);
+      break;
+    case PROP_RADIUS_BOTTOM_RIGHT_X:
+      g_value_set_double (value, rect_data->radius_bottom_right_x);
+      break;
+    case PROP_RADIUS_BOTTOM_RIGHT_Y:
+      g_value_set_double (value, rect_data->radius_bottom_right_y);
+      break;
+    case PROP_RADIUS_BOTTOM_LEFT_X:
+      g_value_set_double (value, rect_data->radius_bottom_left_x);
+      break;
+    case PROP_RADIUS_BOTTOM_LEFT_Y:
+      g_value_set_double (value, rect_data->radius_bottom_left_y);
+      break;
     default:
       G_OBJECT_WARN_INVALID_PROPERTY_ID (object, prop_id, pspec);
       break;
@@ -265,6 +361,30 @@ goo_canvas_rect_set_common_property (GObject              *object,
     case PROP_RADIUS_Y:
       rect_data->radius_y = g_value_get_double (value);
       break;
+    case PROP_RADIUS_TOP_LEFT_X:
+      rect_data->radius_top_left_x = g_value_get_double (value);
+      break;
+    case PROP_RADIUS_TOP_LEFT_Y:
+      rect_data->radius_top_left_y = g_value_get_double (value);
+      break;
+    case PROP_RADIUS_TOP_RIGHT_X:
+      rect_data->radius_top_right_x = g_value_get_double (value);
+      break;
+    case PROP_RADIUS_TOP_RIGHT_Y:
+      rect_data->radius_top_right_y = g_value_get_double (value);
+      break;
+    case PROP_RADIUS_BOTTOM_RIGHT_X:
+      rect_data->radius_bottom_right_x = g_value_get_double (value);
+      break;
+    case PROP_RADIUS_BOTTOM_RIGHT_Y:
+      rect_data->radius_bottom_right_y = g_value_get_double (value);
+      break;
+    case PROP_RADIUS_BOTTOM_LEFT_X:
+      rect_data->radius_bottom_left_x = g_value_get_double (value);
+      break;
+    case PROP_RADIUS_BOTTOM_LEFT_Y:
+      rect_data->radius_bottom_left_y = g_value_get_double (value);
+      break;
     default:
       G_OBJECT_WARN_INVALID_PROPERTY_ID (object, prop_id, pspec);
       break;
@@ -303,51 +423,142 @@ goo_canvas_rect_create_path (GooCanvasItemSimple *simple,
   cairo_new_path (cr);
 
   /* Check if we need to draw rounded corners. */
-  if (rect_data->radius_x > 0 && rect_data->radius_y > 0)
+  if ((rect_data->radius_x > 0 && rect_data->radius_y > 0)
+      || (rect_data->radius_top_left_x > 0 && rect_data->radius_top_left_y > 0)
+      || (rect_data->radius_top_right_x > 0 && rect_data->radius_top_right_y > 0)
+      || (rect_data->radius_bottom_right_x > 0 && rect_data->radius_bottom_right_y > 0)
+      || (rect_data->radius_bottom_left_x > 0 && rect_data->radius_bottom_left_y > 0))
     {
+      /* Half the size of the rect. */
+      double half_width = rect_data->width / 2;
+      double half_height = rect_data->height / 2;
+
       /* The radii can't be more than half the size of the rect. */
-      double rx = MIN (rect_data->radius_x, rect_data->width / 2);
-      double ry = MIN (rect_data->radius_y, rect_data->height / 2);
+      double rx = MIN (rect_data->radius_x, half_width);
+      double ry = MIN (rect_data->radius_y, half_height);
+      double r_tl_x = MIN (rect_data->radius_top_left_x, MIN (half_width, half_height));
+      if (r_tl_x == 0) {
+          r_tl_x = rx;
+      }
+      double r_tl_y = MIN (rect_data->radius_top_left_y, MIN (half_width, half_height));
+      if (r_tl_y == 0) {
+          r_tl_y = ry;
+      }
+      double r_tr_x = MIN (rect_data->radius_top_right_x, MIN (half_width, half_height));
+      if (r_tr_x == 0) {
+          r_tr_x = rx;
+      }
+      double r_tr_y = MIN (rect_data->radius_top_right_y, MIN (half_width, half_height));
+      if (r_tr_y == 0) {
+          r_tr_y = ry;
+      }
+      double r_bl_x = MIN (rect_data->radius_bottom_left_x, MIN (half_width, half_height));
+      if (r_bl_x == 0) {
+          r_bl_x = rx;
+      }
+      double r_bl_y = MIN (rect_data->radius_bottom_left_y, MIN (half_width, half_height));
+      if (r_bl_y == 0) {
+          r_bl_y = ry;
+      }
+      double r_br_x = MIN (rect_data->radius_bottom_right_x, MIN (half_width, half_height));
+      if (r_br_x == 0) {
+          r_br_x = rx;
+      }
+      double r_br_y = MIN (rect_data->radius_bottom_right_y, MIN (half_width, half_height));
+      if (r_br_y == 0) {
+          r_br_y = ry;
+      }
 
       /* Draw the top-right arc. */
       cairo_save (cr);
-      cairo_translate (cr, rect_data->x + rect_data->width - rx,
-		       rect_data->y + ry);
-      cairo_scale (cr, rx, ry);
-      cairo_arc (cr, 0.0, 0.0, 1.0, 1.5 * M_PI, 2.0 * M_PI);
+      if (r_tr_x > 0 && r_tr_y > 0)
+        {
+          cairo_translate (cr, rect_data->x + rect_data->width - r_tr_x,
+                           rect_data->y + r_tr_y);
+          cairo_scale (cr, r_tr_x, r_tr_y);
+          cairo_arc (cr, 0.0, 0.0, 1.0, 1.5 * M_PI, 2.0 * M_PI);
+        }
+      else
+        {
+          cairo_line_to (cr, rect_data->x + rect_data->width, rect_data->y);
+        }
       cairo_restore (cr);
 
       /* Draw the line down the right side. */
-      cairo_line_to (cr, rect_data->x + rect_data->width,
-		     rect_data->y + rect_data->height - ry);
+      if (r_br_x > 0 && r_br_y > 0)
+        {
+          cairo_line_to (cr, rect_data->x + rect_data->width,
+                         rect_data->y + rect_data->height - r_br_y);
+        }
+      else
+        {
+          cairo_line_to (cr, rect_data->x + rect_data->width,
+                         rect_data->y + rect_data->height);
+        }
 
       /* Draw the bottom-right arc. */
       cairo_save (cr);
-      cairo_translate (cr, rect_data->x + rect_data->width - rx,
-		       rect_data->y + rect_data->height - ry);
-      cairo_scale (cr, rx, ry);
-      cairo_arc (cr, 0.0, 0.0, 1.0, 0.0, 0.5 * M_PI);
+      if (r_br_x > 0 && r_br_y > 0)
+        {
+          cairo_translate (cr, rect_data->x + rect_data->width - r_br_x,
+                           rect_data->y + rect_data->height - r_br_y);
+          cairo_scale (cr, r_br_x, r_br_y);
+          cairo_arc (cr, 0.0, 0.0, 1.0, 0.0, 0.5 * M_PI);
+        }
+      else
+        {
+          cairo_line_to (cr, rect_data->x + rect_data->width,
+                           rect_data->y + rect_data->height);
+        }
       cairo_restore (cr);
 
       /* Draw the line left across the bottom. */
-      cairo_line_to (cr, rect_data->x + rx, rect_data->y + rect_data->height);
+      if (r_br_x > 0 && r_br_y > 0)
+        {
+          cairo_line_to (cr, rect_data->x + r_br_x, rect_data->y + rect_data->height);
+        }
+      else
+        {
+          cairo_line_to (cr, rect_data->x + r_bl_x, rect_data->y + rect_data->height);
+        }
 
       /* Draw the bottom-left arc. */
       cairo_save (cr);
-      cairo_translate (cr, rect_data->x + rx,
-		       rect_data->y + rect_data->height - ry);
-      cairo_scale (cr, rx, ry);
-      cairo_arc (cr, 0.0, 0.0, 1.0, 0.5 * M_PI, M_PI);
+      if (r_bl_x > 0 && r_bl_y > 0)
+        {
+          cairo_translate (cr, rect_data->x + r_bl_x,
+                           rect_data->y + rect_data->height - r_bl_y);
+          cairo_scale (cr, r_bl_x, r_bl_y);
+          cairo_arc (cr, 0.0, 0.0, 1.0, 0.5 * M_PI, M_PI);
+        }
+      else
+        {
+          cairo_line_to (cr, rect_data->x, rect_data->y + rect_data->height);
+        }
       cairo_restore (cr);
 
       /* Draw the line up the left side. */
-      cairo_line_to (cr, rect_data->x, rect_data->y + ry);
+      if (r_tl_x > 0 && r_tl_y > 0)
+        {
+          cairo_line_to (cr, rect_data->x, rect_data->y + r_tl_y);
+        }
+      else
+        {
+          cairo_line_to (cr, rect_data->x, rect_data->y);
+        }
 
       /* Draw the top-left arc. */
       cairo_save (cr);
-      cairo_translate (cr, rect_data->x + rx, rect_data->y + ry);
-      cairo_scale (cr, rx, ry);
-      cairo_arc (cr, 0.0, 0.0, 1.0, M_PI, 1.5 * M_PI);
+      if (r_tl_x > 0 && r_tl_y > 0)
+        {
+          cairo_translate (cr, rect_data->x + r_tl_x, rect_data->y + r_tl_y);
+          cairo_scale (cr, r_tl_x, r_tl_y);
+          cairo_arc (cr, 0.0, 0.0, 1.0, M_PI, 1.5 * M_PI);
+        }
+      else
+        {
+          cairo_line_to (cr, rect_data->x, rect_data->y);
+        }
       cairo_restore (cr);
 
       /* Close the path across the top. */
@@ -535,6 +746,14 @@ goo_canvas_rect_model_new (GooCanvasItemModel *parent,
   rect_data->height = height;
   rect_data->radius_x = 0;
   rect_data->radius_y = 0;
+  rect_data->radius_top_left_x = 0;
+  rect_data->radius_top_left_y = 0;
+  rect_data->radius_top_right_x = 0;
+  rect_data->radius_top_right_y = 0;
+  rect_data->radius_bottom_right_x = 0;
+  rect_data->radius_bottom_right_y = 0;
+  rect_data->radius_bottom_left_x = 0;
+  rect_data->radius_bottom_left_y = 0;
 
   va_start (var_args, height);
   first_property = va_arg (var_args, char*);
