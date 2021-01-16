@@ -1,3 +1,10 @@
+2021-01-16  Alberto Fanjul  <albfan@gnome.org>
+
+	* Allow customize each corner radius for rectangle shape
+	* Bump gettext version
+	* Rotate Skew demo
+	* Let goo_canvas_pointer_grab take NULL
+
 2020-03-15  Alberto Fanjul  <albfan@gnome.org>
 
 	* Change the ABI from goocanvas-2.0 to goocanvas-3.0: Use goocanvas-3.0 to continue developing on gtk 3

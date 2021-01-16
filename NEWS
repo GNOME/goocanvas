@@ -1,3 +1,12 @@
+GooCanvas 3.0.0	(Jan 16 2021)
+===============
+
+ o Allow customize each corner radius for rectangle shape
+ o Bump gettext version
+ o Rotate Skew demo
+ o Let goo_canvas_pointer_grab take NULL
+ o Change the ABI from goocanvas-2.0 to goocanvas-3.0.
+
 
 GooCanvas 2.0.4	(Oct 10 2017)
 ===============

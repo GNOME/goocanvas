@@ -1,6 +1,6 @@
 dnl Process this file with autoconf to produce a configure script.
 
-AC_INIT(goocanvas, 3.00.0)
+AC_INIT(goocanvas, 3.0.0)
 AC_PREREQ(2.50)
 AC_CONFIG_SRCDIR(src/goocanvas.c)
 AC_CONFIG_HEADERS(config.h)
