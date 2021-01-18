@@ -1,0 +1,4 @@
+option('python', type: 'feature', value: 'auto', description: 'build python support')
+option('introspection', type: 'feature', value: 'auto', description: 'build introspection support')
+
+option('gtk_doc', type: 'boolean', value: false, description: 'build GTK Doc reference')
