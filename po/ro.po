@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: goocanvas goocanvas-2.0\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/goocanvas/issues\n"
-"POT-Creation-Date: 2021-01-15 22:53+0000\n"
-"PO-Revision-Date: 2021-05-05 12:27+0200\n"
+"POT-Creation-Date: 2021-05-05 10:29+0000\n"
+"PO-Revision-Date: 2021-05-05 12:30+0200\n"
 "Last-Translator: \n"
 "Language-Team: Romanian <gnomero-list@lists.sourceforge.net>\n"
 "Language: ro\n"
@@ -19,141 +19,141 @@ msgstr ""
 "20)) ? 1 : 2);;\n"
 "X-Generator: Poedit 2.4.2\n"
 
-#: src/goocanvas.c:310
+#: src/goocanvas.c:309
 msgid "Scale"
 msgstr "Scalează"
 
-#: src/goocanvas.c:311
+#: src/goocanvas.c:310
 msgid "The magnification factor of the canvas"
 msgstr "Factorul de mărire a canavalei"
 
-#: src/goocanvas.c:317
+#: src/goocanvas.c:316
 msgid "Scale X"
 msgstr "Scalează X"
 
-#: src/goocanvas.c:318
+#: src/goocanvas.c:317
 msgid "The horizontal magnification factor of the canvas"
 msgstr "Factorul de mărire orizontală a canavalei"
 
-#: src/goocanvas.c:324
+#: src/goocanvas.c:323
 msgid "Scale Y"
 msgstr "Scalează Y"
 
-#: src/goocanvas.c:325
+#: src/goocanvas.c:324
 msgid "The vertical magnification factor of the canvas"
 msgstr "Factorul de mărire verticală a canavalei"
 
-#: src/goocanvas.c:331 src/goocanvastext.c:158 src/goocanvaswidget.c:587
+#: src/goocanvas.c:330 src/goocanvastext.c:158 src/goocanvaswidget.c:587
 msgid "Anchor"
 msgstr "Ancoră"
 
-#: src/goocanvas.c:332
+#: src/goocanvas.c:331
 msgid ""
 "Where to place the canvas when it is smaller than the widget's allocated area"
 msgstr ""
 "Unde să se plaseze canavaua când este mai mică decât zona alocată widgetului"
 
-#: src/goocanvas.c:339
+#: src/goocanvas.c:338
 msgid "X1"
 msgstr "X1"
 
-#: src/goocanvas.c:340
+#: src/goocanvas.c:339
 msgid "The x coordinate of the left edge of the canvas bounds, in canvas units"
 msgstr "Coordonata x a marginii din stânga a canavalei, în unități canava"
 
-#: src/goocanvas.c:347
+#: src/goocanvas.c:346
 msgid "Y1"
 msgstr "Y1"
 
-#: src/goocanvas.c:348
+#: src/goocanvas.c:347
 msgid "The y coordinate of the top edge of the canvas bounds, in canvas units"
 msgstr ""
 "Coordonata y a marginii de sus a limitelor canavalei, în unități canava"
 
-#: src/goocanvas.c:355
+#: src/goocanvas.c:354
 msgid "X2"
 msgstr "X2"
 
-#: src/goocanvas.c:356
+#: src/goocanvas.c:355
 msgid ""
 "The x coordinate of the right edge of the canvas bounds, in canvas units"
 msgstr ""
 "Coordonata x a marginii din dreapta a limitelor canavalei, în unități canava"
 
-#: src/goocanvas.c:364
+#: src/goocanvas.c:363
 msgid "Y2"
 msgstr "Y2"
 
-#: src/goocanvas.c:365
+#: src/goocanvas.c:364
 msgid ""
 "The y coordinate of the bottom edge of the canvas bounds, in canvas units"
 msgstr ""
 "Coordonata y a marginii de jos a limitelor canavalei, în unități canava"
 
-#: src/goocanvas.c:374
+#: src/goocanvas.c:373
 msgid "Automatic Bounds"
 msgstr "Limite automate"
 
-#: src/goocanvas.c:375
+#: src/goocanvas.c:374
 msgid ""
 "If the bounds are automatically calculated based on the bounds of all the "
 "items in the canvas"
 msgstr ""
 "Dacă limitele sunt calculate automat pe baza limitelor elementelor din canava"
 
-#: src/goocanvas.c:381
+#: src/goocanvas.c:380
 msgid "Bounds From Origin"
 msgstr "Margini de la origine"
 
-#: src/goocanvas.c:382
+#: src/goocanvas.c:381
 msgid "If the automatic bounds are calculated from the origin"
 msgstr "Dacă limitele automate să fie calculate de la origine"
 
-#: src/goocanvas.c:388
+#: src/goocanvas.c:387
 msgid "Bounds Padding"
 msgstr "Margini Padding"
 
-#: src/goocanvas.c:389
+#: src/goocanvas.c:388
 msgid "The padding added to the automatic bounds"
 msgstr "Padding-ul adăugat la limitele automate"
 
-#: src/goocanvas.c:395
+#: src/goocanvas.c:394
 msgid "Units"
 msgstr "Unități"
 
-#: src/goocanvas.c:396
+#: src/goocanvas.c:395
 msgid "The units to use for the canvas"
 msgstr "Unitățile de folosit pentru canava"
 
-#: src/goocanvas.c:403
+#: src/goocanvas.c:402
 msgid "Resolution X"
 msgstr "Rezoluție X"
 
-#: src/goocanvas.c:404
+#: src/goocanvas.c:403
 msgid "The horizontal resolution of the display, in dots per inch"
 msgstr "Rezoluția orizontală de afișat, în puncte pe țol"
 
-#: src/goocanvas.c:411
+#: src/goocanvas.c:410
 msgid "Resolution Y"
 msgstr "Rezoluție Y"
 
-#: src/goocanvas.c:412
+#: src/goocanvas.c:411
 msgid "The vertical resolution of the display, in dots per inch"
 msgstr "Rezoluția verticală a afișării, în puncte pe țol"
 
-#: src/goocanvas.c:420
+#: src/goocanvas.c:419
 msgid "Background Color"
 msgstr "Culoare de fudal"
 
-#: src/goocanvas.c:421
+#: src/goocanvas.c:420
 msgid "The color to use for the canvas background"
 msgstr "Culoarea de folosit pentru fundalul canavalei"
 
-#: src/goocanvas.c:427
+#: src/goocanvas.c:426
 msgid "Background Color RGB"
 msgstr "Culoare de fundal RGB"
 
-#: src/goocanvas.c:428
+#: src/goocanvas.c:427
 msgid ""
 "The color to use for the canvas background, specified as a 24-bit integer "
 "value, 0xRRGGBB"
@@ -161,35 +161,35 @@ msgstr ""
 "Culoarea de folosit pentru fundalul canavalei, specificată ca o valoare "
 "întreagă de 24-biți, 0xRRGGBB"
 
-#: src/goocanvas.c:441
+#: src/goocanvas.c:440
 msgid "Background Color GdkRGBA"
 msgstr "Culoare de fundal GdkRGBA"
 
-#: src/goocanvas.c:442
+#: src/goocanvas.c:441
 msgid "The color to use for the canvas background, specified as a GdkRGBA"
 msgstr "Culoarea de folosit pentru fundalul canavalei, specificată ca GdkRGBA"
 
-#: src/goocanvas.c:448
+#: src/goocanvas.c:447
 msgid "Integer Layout"
 msgstr "Aranjament de întregi"
 
-#: src/goocanvas.c:449
+#: src/goocanvas.c:448
 msgid "If all item layout is done to the nearest integer"
 msgstr "Dacă toate aspectele elementelor este făcut la cel mai apropiat întreg"
 
-#: src/goocanvas.c:455
+#: src/goocanvas.c:454
 msgid "Clear Background"
 msgstr "Golește fundal"
 
-#: src/goocanvas.c:456
+#: src/goocanvas.c:455
 msgid "If the background is cleared before the canvas is painted"
 msgstr "Dacă fundalul este curățat înaintea desenării canavalei"
 
-#: src/goocanvas.c:462
+#: src/goocanvas.c:461
 msgid "Redraw When Scrolled"
 msgstr "Redesenează la derulare"
 
-#: src/goocanvas.c:463
+#: src/goocanvas.c:462
 msgid ""
 "If the canvas is completely redrawn when scrolled, to reduce the flicker of "
 "static items. Note that since GTK+ 3.0 the canvas is always redrawn when "
@@ -1013,8 +1013,8 @@ msgstr "Spațiere bordură X"
 
 #: src/goocanvastable.c:265
 msgid ""
-"The amount of spacing between the lefmost and rightmost cells and the border "
-"grid line"
+"The amount of spacing between the leftmost and rightmost cells and the "
+"border grid line"
 msgstr ""
 "Cantitatea de spațiere dintre celulele din stânga și dreapta și bordura "
 "liniei grilă"
