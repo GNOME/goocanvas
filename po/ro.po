@@ -1,0 +1,1285 @@
+# Romanian translation for goocanvas.
+# Copyright (C) 2021 goocanvas's COPYRIGHT HOLDER
+# This file is distributed under the same license as the goocanvas package.
+# Daniel Șerbănescu <daniel@serbanescu.dk>, 2021.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: goocanvas goocanvas-2.0\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/goocanvas/issues\n"
+"POT-Creation-Date: 2021-01-15 22:53+0000\n"
+"PO-Revision-Date: 2021-05-05 12:27+0200\n"
+"Last-Translator: \n"
+"Language-Team: Romanian <gnomero-list@lists.sourceforge.net>\n"
+"Language: ro\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
+"20)) ? 1 : 2);;\n"
+"X-Generator: Poedit 2.4.2\n"
+
+#: src/goocanvas.c:310
+msgid "Scale"
+msgstr "Scalează"
+
+#: src/goocanvas.c:311
+msgid "The magnification factor of the canvas"
+msgstr "Factorul de mărire a canavalei"
+
+#: src/goocanvas.c:317
+msgid "Scale X"
+msgstr "Scalează X"
+
+#: src/goocanvas.c:318
+msgid "The horizontal magnification factor of the canvas"
+msgstr "Factorul de mărire orizontală a canavalei"
+
+#: src/goocanvas.c:324
+msgid "Scale Y"
+msgstr "Scalează Y"
+
+#: src/goocanvas.c:325
+msgid "The vertical magnification factor of the canvas"
+msgstr "Factorul de mărire verticală a canavalei"
+
+#: src/goocanvas.c:331 src/goocanvastext.c:158 src/goocanvaswidget.c:587
+msgid "Anchor"
+msgstr "Ancoră"
+
+#: src/goocanvas.c:332
+msgid ""
+"Where to place the canvas when it is smaller than the widget's allocated area"
+msgstr ""
+"Unde să se plaseze canavaua când este mai mică decât zona alocată widgetului"
+
+#: src/goocanvas.c:339
+msgid "X1"
+msgstr "X1"
+
+#: src/goocanvas.c:340
+msgid "The x coordinate of the left edge of the canvas bounds, in canvas units"
+msgstr "Coordonata x a marginii din stânga a canavalei, în unități canava"
+
+#: src/goocanvas.c:347
+msgid "Y1"
+msgstr "Y1"
+
+#: src/goocanvas.c:348
+msgid "The y coordinate of the top edge of the canvas bounds, in canvas units"
+msgstr ""
+"Coordonata y a marginii de sus a limitelor canavalei, în unități canava"
+
+#: src/goocanvas.c:355
+msgid "X2"
+msgstr "X2"
+
+#: src/goocanvas.c:356
+msgid ""
+"The x coordinate of the right edge of the canvas bounds, in canvas units"
+msgstr ""
+"Coordonata x a marginii din dreapta a limitelor canavalei, în unități canava"
+
+#: src/goocanvas.c:364
+msgid "Y2"
+msgstr "Y2"
+
+#: src/goocanvas.c:365
+msgid ""
+"The y coordinate of the bottom edge of the canvas bounds, in canvas units"
+msgstr ""
+"Coordonata y a marginii de jos a limitelor canavalei, în unități canava"
+
+#: src/goocanvas.c:374
+msgid "Automatic Bounds"
+msgstr "Limite automate"
+
+#: src/goocanvas.c:375
+msgid ""
+"If the bounds are automatically calculated based on the bounds of all the "
+"items in the canvas"
+msgstr ""
+"Dacă limitele sunt calculate automat pe baza limitelor elementelor din canava"
+
+#: src/goocanvas.c:381
+msgid "Bounds From Origin"
+msgstr "Margini de la origine"
+
+#: src/goocanvas.c:382
+msgid "If the automatic bounds are calculated from the origin"
+msgstr "Dacă limitele automate să fie calculate de la origine"
+
+#: src/goocanvas.c:388
+msgid "Bounds Padding"
+msgstr "Margini Padding"
+
+#: src/goocanvas.c:389
+msgid "The padding added to the automatic bounds"
+msgstr "Padding-ul adăugat la limitele automate"
+
+#: src/goocanvas.c:395
+msgid "Units"
+msgstr "Unități"
+
+#: src/goocanvas.c:396
+msgid "The units to use for the canvas"
+msgstr "Unitățile de folosit pentru canava"
+
+#: src/goocanvas.c:403
+msgid "Resolution X"
+msgstr "Rezoluție X"
+
+#: src/goocanvas.c:404
+msgid "The horizontal resolution of the display, in dots per inch"
+msgstr "Rezoluția orizontală de afișat, în puncte pe țol"
+
+#: src/goocanvas.c:411
+msgid "Resolution Y"
+msgstr "Rezoluție Y"
+
+#: src/goocanvas.c:412
+msgid "The vertical resolution of the display, in dots per inch"
+msgstr "Rezoluția verticală a afișării, în puncte pe țol"
+
+#: src/goocanvas.c:420
+msgid "Background Color"
+msgstr "Culoare de fudal"
+
+#: src/goocanvas.c:421
+msgid "The color to use for the canvas background"
+msgstr "Culoarea de folosit pentru fundalul canavalei"
+
+#: src/goocanvas.c:427
+msgid "Background Color RGB"
+msgstr "Culoare de fundal RGB"
+
+#: src/goocanvas.c:428
+msgid ""
+"The color to use for the canvas background, specified as a 24-bit integer "
+"value, 0xRRGGBB"
+msgstr ""
+"Culoarea de folosit pentru fundalul canavalei, specificată ca o valoare "
+"întreagă de 24-biți, 0xRRGGBB"
+
+#: src/goocanvas.c:441
+msgid "Background Color GdkRGBA"
+msgstr "Culoare de fundal GdkRGBA"
+
+#: src/goocanvas.c:442
+msgid "The color to use for the canvas background, specified as a GdkRGBA"
+msgstr "Culoarea de folosit pentru fundalul canavalei, specificată ca GdkRGBA"
+
+#: src/goocanvas.c:448
+msgid "Integer Layout"
+msgstr "Aranjament de întregi"
+
+#: src/goocanvas.c:449
+msgid "If all item layout is done to the nearest integer"
+msgstr "Dacă toate aspectele elementelor este făcut la cel mai apropiat întreg"
+
+#: src/goocanvas.c:455
+msgid "Clear Background"
+msgstr "Golește fundal"
+
+#: src/goocanvas.c:456
+msgid "If the background is cleared before the canvas is painted"
+msgstr "Dacă fundalul este curățat înaintea desenării canavalei"
+
+#: src/goocanvas.c:462
+msgid "Redraw When Scrolled"
+msgstr "Redesenează la derulare"
+
+#: src/goocanvas.c:463
+msgid ""
+"If the canvas is completely redrawn when scrolled, to reduce the flicker of "
+"static items. Note that since GTK+ 3.0 the canvas is always redrawn when "
+"scrolled, so this option has no effect."
+msgstr ""
+"Dacă canavalele sunt complet redesenate la derulare, pentru a reduce "
+"clipirea elementelor statice. Luați aminte că de la GTK+ 3.0 canavalele sunt "
+"întotdeauna redesenate la derulare, așadar această opțiune nu are niciun "
+"efect."
+
+#: src/goocanvasellipse.c:77
+msgid "Center X"
+msgstr "Centrează X"
+
+#: src/goocanvasellipse.c:78
+msgid "The x coordinate of the center of the ellipse"
+msgstr "Coordonata x a centrului elipsei"
+
+#: src/goocanvasellipse.c:85
+msgid "Center Y"
+msgstr "Centrează Y"
+
+#: src/goocanvasellipse.c:86
+msgid "The y coordinate of the center of the ellipse"
+msgstr "Coordonata y a centrului elipsei"
+
+#: src/goocanvasellipse.c:93 src/goocanvasrect.c:90
+msgid "Radius X"
+msgstr "Rază X"
+
+#: src/goocanvasellipse.c:94
+msgid "The horizontal radius of the ellipse"
+msgstr "Raza orizontală a elipsei"
+
+#: src/goocanvasellipse.c:100 src/goocanvasrect.c:97
+msgid "Radius Y"
+msgstr "Rază Y"
+
+#: src/goocanvasellipse.c:101
+msgid "The vertical radius of the ellipse"
+msgstr "Raza verticală a elipsei"
+
+#: src/goocanvasellipse.c:108
+msgid "The x coordinate of the left side of the ellipse"
+msgstr "Coordonata x a părții stângi a elipsei"
+
+#: src/goocanvasellipse.c:116
+msgid "The y coordinate of the top of the ellipse"
+msgstr "Coordonata y a topului elipsei"
+
+#: src/goocanvasellipse.c:123 src/goocanvasgrid.c:127 src/goocanvasgroup.c:106
+#: src/goocanvasimage.c:115 src/goocanvaspath.c:93 src/goocanvaspolyline.c:246
+#: src/goocanvasrect.c:76 src/goocanvastext.c:141 src/goocanvaswidget.c:570
+msgid "Width"
+msgstr "Lățime"
+
+#: src/goocanvasellipse.c:124
+msgid "The width of the ellipse"
+msgstr "Lățimea elipsei"
+
+#: src/goocanvasellipse.c:130 src/goocanvasgrid.c:134 src/goocanvasgroup.c:114
+#: src/goocanvasimage.c:122 src/goocanvaspath.c:100 src/goocanvaspolyline.c:253
+#: src/goocanvasrect.c:83 src/goocanvastext.c:149 src/goocanvaswidget.c:578
+msgid "Height"
+msgstr "Înălțime"
+
+#: src/goocanvasellipse.c:131
+msgid "The height of the ellipse"
+msgstr "Înălțimea elipsei"
+
+#: src/goocanvasgrid.c:112
+msgid "The x coordinate of the grid"
+msgstr "Coordonata x a grilei"
+
+#: src/goocanvasgrid.c:120
+msgid "The y coordinate of the grid"
+msgstr "Coordonata y a grilei"
+
+#: src/goocanvasgrid.c:128
+msgid "The width of the grid"
+msgstr "Lățimea grilei"
+
+#: src/goocanvasgrid.c:135
+msgid "The height of the grid"
+msgstr "Înălțimea grilei"
+
+#: src/goocanvasgrid.c:142
+msgid "The distance between the vertical grid lines"
+msgstr "Distanța dintre liniile grilă verticale"
+
+#: src/goocanvasgrid.c:149
+msgid "The distance between the horizontal grid lines"
+msgstr "Distanța dintre liniile grilă orizontale"
+
+#: src/goocanvasgrid.c:156
+msgid "The distance before the first vertical grid line"
+msgstr "Distanța dinaintea primei linii grilă verticală"
+
+#: src/goocanvasgrid.c:163
+msgid "The distance before the first horizontal grid line"
+msgstr "Distanța dinaintea primei linii grilă orizontală"
+
+#: src/goocanvasgrid.c:169 src/goocanvastable.c:276
+msgid "Horizontal Grid Line Width"
+msgstr "Lățimea liniei orizontale de grilă"
+
+#: src/goocanvasgrid.c:170
+msgid "The width of the horizontal grid lines"
+msgstr "Lățimea liniilor grilă orizontale"
+
+#: src/goocanvasgrid.c:177 src/goocanvastable.c:283
+msgid "Vertical Grid Line Width"
+msgstr "Lățimea liniei verticală de grilă"
+
+#: src/goocanvasgrid.c:178
+msgid "The width of the vertical grid lines"
+msgstr "Lățimea liniilor grilă verticale"
+
+#: src/goocanvasgrid.c:185
+msgid "Horizontal Grid Line Pattern"
+msgstr "Mostra liniei orizontale de grilă"
+
+#: src/goocanvasgrid.c:186
+msgid "The cairo pattern to paint the horizontal grid lines with"
+msgstr "Mostra cairo de desenat liniile grilă orizontale"
+
+#: src/goocanvasgrid.c:192
+msgid "Vertical Grid Line Pattern"
+msgstr "Mostra liniei verticale de grilă"
+
+#: src/goocanvasgrid.c:193
+msgid "The cairo pattern to paint the vertical grid lines with"
+msgstr "Mostra cairo de desenat liniile grilă verticale"
+
+#: src/goocanvasgrid.c:199
+msgid "Border Width"
+msgstr "Lățime bordură"
+
+#: src/goocanvasgrid.c:200
+msgid "The width of the border around the grid"
+msgstr "Lățimea bordurii din jurul grilei"
+
+#: src/goocanvasgrid.c:207
+msgid "Border Pattern"
+msgstr "Mostră bordură"
+
+#: src/goocanvasgrid.c:208
+msgid "The cairo pattern to paint the border with"
+msgstr "Mostra cairo de desenat bordurile"
+
+#: src/goocanvasgrid.c:214
+msgid "Show Horizontal Grid Lines"
+msgstr "Arată liniile orizontale de grilă"
+
+#: src/goocanvasgrid.c:215
+msgid "If the horizontal grid lines are shown"
+msgstr "Dacă liniile de grilă orizontale sunt afișate"
+
+#: src/goocanvasgrid.c:221
+msgid "Show Vertical Grid Lines"
+msgstr "Arată liniile verticale de grilă"
+
+#: src/goocanvasgrid.c:222
+msgid "If the vertical grid lines are shown"
+msgstr "Dacă liniile verticale de grilă sunt arătate"
+
+#: src/goocanvasgrid.c:228
+msgid "Vertical Grid Lines On Top"
+msgstr "Linii verticale de grilă deasupra"
+
+#: src/goocanvasgrid.c:229
+msgid "If the vertical grid lines are painted above the horizontal grid lines"
+msgstr ""
+"Dacă liniile de grilă verticală sunt desenate deasupra liniilor de grilă "
+"orizontală"
+
+#: src/goocanvasgrid.c:237
+msgid "Horizontal Grid Line Color"
+msgstr "Culoarea liniei orizontală de grilă"
+
+#: src/goocanvasgrid.c:238
+msgid "The color to use for the horizontal grid lines"
+msgstr "Culoarea de folosit pentru liniile grilă orizontale"
+
+#: src/goocanvasgrid.c:244
+msgid "Horizontal Grid Line Color RGBA"
+msgstr "Culoarea RGBA a liniei orizontală de grilă"
+
+#: src/goocanvasgrid.c:245
+msgid ""
+"The color to use for the horizontal grid lines, specified as a 32-bit "
+"integer value"
+msgstr ""
+"Culoarea de folosit pentru liniile grilă orizontale, specificată ca o "
+"valoare întreagă de 32-biți"
+
+#: src/goocanvasgrid.c:258
+msgid "Horizontal Grid Line Color GdkRGBA"
+msgstr "Culoarea GdkRGBA a liniei orizontală de grilă"
+
+#: src/goocanvasgrid.c:259
+msgid "The color to use for the horizontal grid lines, specified as a GdkRGBA"
+msgstr ""
+"Culoarea de folosit pentru liniile grilă orizontale, specificată ca GdkRGBA"
+
+#: src/goocanvasgrid.c:265
+msgid "Horizontal Grid Line Pixbuf"
+msgstr "Pixbuf-ul liniei orizontale de grilă"
+
+#: src/goocanvasgrid.c:266
+msgid "The pixbuf to use to draw the horizontal grid lines"
+msgstr "Pixbuf-ul de folosi pentru a desena liniile grilă orizontale"
+
+#: src/goocanvasgrid.c:272
+msgid "Vertical Grid Line Color"
+msgstr "Culoarea liniei verticală de grilă"
+
+#: src/goocanvasgrid.c:273
+msgid "The color to use for the vertical grid lines"
+msgstr "Culoarea de folosit pentru liniile grilă verticale"
+
+#: src/goocanvasgrid.c:279
+msgid "Vertical Grid Line Color RGBA"
+msgstr "Culoarea RGBA a liniei verticală de grilă"
+
+#: src/goocanvasgrid.c:280
+msgid ""
+"The color to use for the vertical grid lines, specified as a 32-bit integer "
+"value"
+msgstr ""
+"Culoarea de folosit pentru liniile grilă verticale, specificată ca o valoare "
+"întreagă de 32-biți"
+
+#: src/goocanvasgrid.c:293
+msgid "Vertical Grid Line Color GdkRGBA"
+msgstr "Culoarea GdkRGBA liniei verticală de grilă"
+
+#: src/goocanvasgrid.c:294
+msgid "The color to use for the vertical grid lines, specified as a GdkRGBA"
+msgstr ""
+"Culoarea de folosit pentru liniile grilă verticale, specificată ca GdkRGBA"
+
+#: src/goocanvasgrid.c:300
+msgid "Vertical Grid Line Pixbuf"
+msgstr "Pixbuf-ul liniei verticală de grilă"
+
+#: src/goocanvasgrid.c:301
+msgid "The pixbuf to use to draw the vertical grid lines"
+msgstr "Pixbuf-ul de folosi pentru a desena liniile de grilă verticale"
+
+#: src/goocanvasgrid.c:307
+msgid "Border Color"
+msgstr "Culoarea bordurii"
+
+#: src/goocanvasgrid.c:308
+msgid "The color to use for the border"
+msgstr "Culoarea de folosit pentru borduri"
+
+#: src/goocanvasgrid.c:314
+msgid "Border Color RGBA"
+msgstr "Culoarea bordurii RGBA"
+
+#: src/goocanvasgrid.c:315
+msgid "The color to use for the border, specified as a 32-bit integer value"
+msgstr ""
+"Culoarea de folosit pentru borduri, specificată ca o valoare întreagă de 32-"
+"biți"
+
+#: src/goocanvasgrid.c:328
+msgid "Border Color GdkRGBA"
+msgstr "Culoarea bordurii GdkRGBA"
+
+#: src/goocanvasgrid.c:329
+msgid "The color to use for the border, specified as a GdkRGBA"
+msgstr "Culoarea de folosit pentru borduri, specificată ca GdkRGBA"
+
+#: src/goocanvasgrid.c:335
+msgid "Border Pixbuf"
+msgstr "Pixbuf bordură"
+
+#: src/goocanvasgrid.c:336
+msgid "The pixbuf to use to draw the border"
+msgstr "Pixbuf-ul de folosi pentru a desena bordura"
+
+#: src/goocanvasgroup.c:91
+msgid "The x coordinate of the group"
+msgstr "Coordonata x a grupului"
+
+#: src/goocanvasgroup.c:99
+msgid "The y coordinate of the group"
+msgstr "Coordonata y a grupului"
+
+#: src/goocanvasgroup.c:107
+msgid "The width of the group, or -1 to use the default width"
+msgstr "Lățimea grupului, sau -1 pentru a folosi lățimea implicită"
+
+#: src/goocanvasgroup.c:115
+msgid "The height of the group, or -1 to use the default height"
+msgstr "Înălțimea grupului, sau -1 pentru a folosi înălțimea implicită"
+
+#: src/goocanvasimage.c:92
+msgid "Pattern"
+msgstr "Mostră"
+
+#: src/goocanvasimage.c:93
+msgid "The cairo pattern to paint"
+msgstr "Mostra cairo de desenat"
+
+#: src/goocanvasimage.c:100
+msgid "The x coordinate of the image"
+msgstr "Coordonata x a imaginii"
+
+#: src/goocanvasimage.c:108
+msgid "The y coordinate of the image"
+msgstr "Coordonata y a imaginii"
+
+#: src/goocanvasimage.c:116
+msgid "The width of the image"
+msgstr "Lățimea imaginii"
+
+#: src/goocanvasimage.c:123
+msgid "The height of the image"
+msgstr "Înălțimea imaginii"
+
+#: src/goocanvasimage.c:129
+msgid "Scale To Fit"
+msgstr "Scalează să se potrivească"
+
+#: src/goocanvasimage.c:130
+msgid "If the image is scaled to fit the width and height settings"
+msgstr ""
+"Dacă imaginea este scalată pentru a se potrivi configurărilor de lățime și "
+"înălțime"
+
+#: src/goocanvasimage.c:136
+msgid "Alpha"
+msgstr "Alfa"
+
+#: src/goocanvasimage.c:137
+msgid "The opacity of the image, 0.0 is fully transparent, and 1.0 is opaque."
+msgstr "Opacitatea imaginii, 0.0 este transparentă total, și 1.0 este opacă."
+
+#: src/goocanvasimage.c:143
+msgid "Pixbuf"
+msgstr "Pixbuf"
+
+#: src/goocanvasimage.c:144
+msgid "The GdkPixbuf to display"
+msgstr "GdkPixbuf-ul de afișat"
+
+#: src/goocanvasitem.c:467 src/goocanvasitemmodel.c:224
+msgid "Parent"
+msgstr "Părinte"
+
+#: src/goocanvasitem.c:468
+msgid "The parent item"
+msgstr "Elementul părinte"
+
+#: src/goocanvasitem.c:474 src/goocanvasitemmodel.c:231
+msgid "Visibility"
+msgstr "Vizibilitate"
+
+#: src/goocanvasitem.c:475 src/goocanvasitemmodel.c:232
+msgid "When the canvas item is visible"
+msgstr "Când elementul de canava este vizibil"
+
+#: src/goocanvasitem.c:482 src/goocanvasitemmodel.c:239
+msgid "Visibility Threshold"
+msgstr "Prag de vizibilitate"
+
+#: src/goocanvasitem.c:483 src/goocanvasitemmodel.c:240
+msgid "The scale threshold at which the item becomes visible"
+msgstr "Pragul scării la care elementul devine vizibil"
+
+#: src/goocanvasitem.c:491 src/goocanvasitemmodel.c:248
+msgid "Transform"
+msgstr "Transformă"
+
+#: src/goocanvasitem.c:492 src/goocanvasitemmodel.c:249
+msgid "The transformation matrix of the item"
+msgstr "Matricea de transformări a elementului"
+
+#: src/goocanvasitem.c:498 src/goocanvasitemmodel.c:255
+msgid "Pointer Events"
+msgstr "Evenimente pointer"
+
+#: src/goocanvasitem.c:499 src/goocanvasitemmodel.c:256
+msgid "Specifies when the item receives pointer events"
+msgstr "Specifică când elementul primește evenimentele pointerului"
+
+#: src/goocanvasitem.c:506 src/goocanvasitemmodel.c:263
+msgid "Title"
+msgstr "Titlu"
+
+#: src/goocanvasitem.c:507 src/goocanvasitemmodel.c:264
+msgid ""
+"A short context-rich description of the item for use by assistive "
+"technologies"
+msgstr ""
+"O descriere scurtă și compactă a elementului de folosit de tehnologiile de "
+"asistență"
+
+#: src/goocanvasitem.c:513 src/goocanvasitemmodel.c:270
+msgid "Description"
+msgstr "Descriere"
+
+#: src/goocanvasitem.c:514 src/goocanvasitemmodel.c:271
+msgid "A description of the item for use by assistive technologies"
+msgstr "O descriere a elementului de folosit de tehnologii de asistență"
+
+#: src/goocanvasitem.c:520 src/goocanvasitemmodel.c:277
+msgid "Can Focus"
+msgstr "Suportă focalizare"
+
+#: src/goocanvasitem.c:521 src/goocanvasitemmodel.c:278
+msgid "If the item can take the keyboard focus"
+msgstr "Dacă elementul poate lua focusul tastaturii"
+
+#: src/goocanvasitem.c:536 src/goocanvasitemmodel.c:284
+msgid "Tooltip"
+msgstr "Indiciu"
+
+#: src/goocanvasitem.c:537 src/goocanvasitemmodel.c:285
+msgid "The tooltip to display for the item"
+msgstr "Indiciu de afișat pentru element"
+
+#: src/goocanvasitemmodel.c:225
+msgid "The parent item model"
+msgstr "Modelul elementului părinte"
+
+#: src/goocanvasitemsimple.c:128
+msgid "Stroke Pattern"
+msgstr "Mostră contur"
+
+#: src/goocanvasitemsimple.c:129
+msgid ""
+"The pattern to use to paint the perimeter of the item, or NULL disable "
+"painting"
+msgstr ""
+"Mostra de folosit pentru a desena perimetrul elementului, sau NULL pentru a "
+"dezactiva desenarea"
+
+#: src/goocanvasitemsimple.c:135
+msgid "Fill Pattern"
+msgstr "Mostră de umplere"
+
+#: src/goocanvasitemsimple.c:136
+msgid ""
+"The pattern to use to paint the interior of the item, or NULL to disable "
+"painting"
+msgstr ""
+"Mostra de folosit pentru a desena interiorul elementului, sau NULL pentru a "
+"dezactiva desenarea"
+
+#: src/goocanvasitemsimple.c:142
+msgid "Fill Rule"
+msgstr "Regulă de umplere"
+
+#: src/goocanvasitemsimple.c:143
+msgid "The fill rule used to determine which parts of the item are filled"
+msgstr ""
+"Regula de umplere folosită în a determina care părți din element să fie "
+"umplute"
+
+#: src/goocanvasitemsimple.c:150
+msgid "Operator"
+msgstr "Operator"
+
+#: src/goocanvasitemsimple.c:151
+msgid "The compositing operator to use"
+msgstr "Operatorul de compoziție de folosit"
+
+#: src/goocanvasitemsimple.c:158
+msgid "Antialias"
+msgstr "Antialias"
+
+#: src/goocanvasitemsimple.c:159
+msgid "The antialiasing mode to use"
+msgstr "Modul antialiasing de folosit"
+
+#: src/goocanvasitemsimple.c:167
+msgid "Line Width"
+msgstr "Lățime linie"
+
+#: src/goocanvasitemsimple.c:168
+msgid "The line width to use for the item's perimeter"
+msgstr "Lățimea liniei de folosit pentru perimetrul elementului"
+
+#: src/goocanvasitemsimple.c:174
+msgid "Line Cap"
+msgstr "Cap linie"
+
+#: src/goocanvasitemsimple.c:175
+msgid "The line cap style to use"
+msgstr "Stilul cap al liniei de folosit"
+
+#: src/goocanvasitemsimple.c:182
+msgid "Line Join"
+msgstr "Join linie"
+
+#: src/goocanvasitemsimple.c:183
+msgid "The line join style to use"
+msgstr "Stilul join de folosit"
+
+#: src/goocanvasitemsimple.c:190
+msgid "Miter Limit"
+msgstr "Limită miter"
+
+#: src/goocanvasitemsimple.c:191
+msgid ""
+"The smallest angle to use with miter joins, in degrees. Bevel joins will be "
+"used below this limit"
+msgstr ""
+"Cel mai mic unghi de folosit cu join miter, în grade. Bevel join va fi "
+"folosit sub această limită"
+
+#: src/goocanvasitemsimple.c:197
+msgid "Line Dash"
+msgstr "Dash linie"
+
+#: src/goocanvasitemsimple.c:198
+msgid "The dash pattern to use"
+msgstr "Mostra dash de folosit"
+
+#: src/goocanvasitemsimple.c:205
+msgid "Font"
+msgstr "Font"
+
+#: src/goocanvasitemsimple.c:206
+msgid "The base font to use for the text"
+msgstr "Fontul de bază de folosit pentru text"
+
+#: src/goocanvasitemsimple.c:212
+msgid "Font Description"
+msgstr "Descriere font"
+
+#: src/goocanvasitemsimple.c:213
+msgid "The attributes specifying which font to use"
+msgstr "Atributele care specifică ce font să se folosească"
+
+#: src/goocanvasitemsimple.c:219
+msgid "Hint Metrics"
+msgstr "Sugerează metrice"
+
+#: src/goocanvasitemsimple.c:220
+msgid "The hinting to be used for font metrics"
+msgstr "Hinting-ul de folosit pentru unitățile fontului"
+
+#: src/goocanvasitemsimple.c:228
+msgid "Stroke Color"
+msgstr "Culoare contur"
+
+#: src/goocanvasitemsimple.c:229
+msgid ""
+"The color to use for the item's perimeter. To disable painting set the "
+"'stroke-pattern' property to NULL"
+msgstr ""
+"Culoarea de folosit pentru perimetrul elementului. Pentru a dezactiva "
+"desenarea stabiliți proprietatea „stroke-pattern” la NULL"
+
+#: src/goocanvasitemsimple.c:235
+msgid "Stroke Color RGBA"
+msgstr "Culoare RGBA contur"
+
+#: src/goocanvasitemsimple.c:236
+msgid ""
+"The color to use for the item's perimeter, specified as a 32-bit integer "
+"value. To disable painting set the 'stroke-pattern' property to NULL"
+msgstr ""
+"Culoarea de folosit pentru perimetrul elementului, specificată ca o valoare "
+"întreagă de 32-biți. Pentru a dezactiva desenarea stabiliți proprietatea "
+"„stroke-pattern” la NULL"
+
+#: src/goocanvasitemsimple.c:249
+msgid "Stroke Color GdkRGBA"
+msgstr "Culoare GdkRGBA contur"
+
+#: src/goocanvasitemsimple.c:250
+msgid ""
+"The color to use for the item's perimeter, specified as a GdkRGBA. To "
+"disable painting set the 'stroke-pattern' property to NULL"
+msgstr ""
+"Culoarea de folosit pentru perimetrul elementului, specificată GdkRGBA. "
+"Pentru a dezactiva desenarea stabiliți proprietatea „stroke-pattern” la NULL"
+
+#: src/goocanvasitemsimple.c:256
+msgid "Stroke Pixbuf"
+msgstr "Pixbuf contur"
+
+#: src/goocanvasitemsimple.c:257
+msgid ""
+"The pixbuf to use to draw the item's perimeter. To disable painting set the "
+"'stroke-pattern' property to NULL"
+msgstr ""
+"Pixbuf-ul de folosi pentru a desena perimetrul elementului. Pentru a "
+"dezactiva desenarea stabiliți proprietatea „stroke-pattern” la NULL"
+
+#: src/goocanvasitemsimple.c:263
+msgid "Fill Color"
+msgstr "Culoare de umplere"
+
+#: src/goocanvasitemsimple.c:264
+msgid ""
+"The color to use to paint the interior of the item. To disable painting set "
+"the 'fill-pattern' property to NULL"
+msgstr ""
+"Culoarea de folosit pentru a desena interiorul unui element Pentru a "
+"dezactiva desenarea stabiliți proprietatea „fill-pattern” la NULL"
+
+#: src/goocanvasitemsimple.c:270
+msgid "Fill Color RGBA"
+msgstr "Culoare de umplere RGBA"
+
+#: src/goocanvasitemsimple.c:271
+msgid ""
+"The color to use to paint the interior of the item, specified as a 32-bit "
+"integer value. To disable painting set the 'fill-pattern' property to NULL"
+msgstr ""
+"Culoarea de folosit pentru a desena interiorul unui element, specificată ca "
+"valoare întreagă de 32-biți. Pentru a dezactiva desenarea stabiliți "
+"proprietatea „fill-pattern” la NULL"
+
+#: src/goocanvasitemsimple.c:284
+msgid "Fill Color GdkRGBA"
+msgstr "Culoare de umplere GdkRGBA"
+
+#: src/goocanvasitemsimple.c:285
+msgid ""
+"The color to use to paint the interior of the item, specified as a GdkRGBA. "
+"To disable painting set the 'fill-pattern' property to NULL"
+msgstr ""
+"Culoarea de folosit pentru a desena interiorul unui element, specificată ca "
+"GdkRGBA. Pentru a dezactiva desenarea stabiliți proprietatea „fill-pattern” "
+"la NULL"
+
+#: src/goocanvasitemsimple.c:291
+msgid "Fill Pixbuf"
+msgstr "Pixbuf de umplere"
+
+#: src/goocanvasitemsimple.c:292
+msgid ""
+"The pixbuf to use to paint the interior of the item. To disable painting set "
+"the 'fill-pattern' property to NULL"
+msgstr ""
+"Pixbuf-ul de folosi pentru a desena interiorul elementului. Pentru a "
+"dezactiva desenarea stabiliți proprietatea „fill-pattern” la NULL"
+
+#: src/goocanvasitemsimple.c:342
+msgid "Clip Path"
+msgstr "Calea tăierii"
+
+#: src/goocanvasitemsimple.c:343
+msgid "The sequence of path commands specifying the clip path"
+msgstr "Secvența de comenzi pentru cale specificând calea de tăiere"
+
+#: src/goocanvasitemsimple.c:349
+msgid "Clip Fill Rule"
+msgstr "Regulă de umplere a tăierii"
+
+#: src/goocanvasitemsimple.c:350
+msgid "The fill rule used to determine which parts of the item are clipped"
+msgstr ""
+"Regula de umplere folosită în a determina care părți din element să fie "
+"tăiate"
+
+#: src/goocanvaspath.c:70
+msgid "Path Data"
+msgstr "Date cale"
+
+#: src/goocanvaspath.c:71
+msgid "The sequence of path commands"
+msgstr "Secvența de comenzi pentru cale"
+
+#: src/goocanvaspath.c:78
+msgid "The x coordinate of the path"
+msgstr "Coordonata x a căii"
+
+#: src/goocanvaspath.c:86
+msgid "The y coordinate of the path"
+msgstr "Coordonata y a căii"
+
+#: src/goocanvaspath.c:94
+msgid "The width of the path"
+msgstr "Lățimea căii"
+
+#: src/goocanvaspath.c:101
+msgid "The height of the path"
+msgstr "Înălțimea căii"
+
+#: src/goocanvaspolyline.c:181
+msgid "Points"
+msgstr "Puncte"
+
+#: src/goocanvaspolyline.c:182
+msgid "The array of points"
+msgstr "Matricea de puncte"
+
+#: src/goocanvaspolyline.c:188
+msgid "Close Path"
+msgstr "Închide calea"
+
+#: src/goocanvaspolyline.c:189
+msgid "If the last point should be connected to the first"
+msgstr "Dacă ultimul punct trebuie să fie conectat cu primul"
+
+#: src/goocanvaspolyline.c:195
+msgid "Start Arrow"
+msgstr "Săgeată de început"
+
+#: src/goocanvaspolyline.c:196
+msgid "If an arrow should be displayed at the start of the polyline"
+msgstr "Dacă o săgeată ar trebui afișată la începutul liniei frânte"
+
+#: src/goocanvaspolyline.c:202
+msgid "End Arrow"
+msgstr "Încheie săgeata"
+
+#: src/goocanvaspolyline.c:203
+msgid "If an arrow should be displayed at the end of the polyline"
+msgstr "Dacă o săgeată ar trebui afișată la sfârșitul liniei frânte"
+
+#: src/goocanvaspolyline.c:209
+msgid "Arrow Length"
+msgstr "Lungimea săgeții"
+
+#: src/goocanvaspolyline.c:210
+msgid "The length of the arrows, as a multiple of the line width"
+msgstr "Lungimea săgeților, ca un multiplu de lățimea liniei"
+
+#: src/goocanvaspolyline.c:216
+msgid "Arrow Width"
+msgstr "Lățimea săgeții"
+
+#: src/goocanvaspolyline.c:217
+msgid "The width of the arrows, as a multiple of the line width"
+msgstr "Lățimea săgeților, ca multiplu de lățime a liniei"
+
+#: src/goocanvaspolyline.c:223
+msgid "Arrow Tip Length"
+msgstr "Lungimea vârfului săgeții"
+
+#: src/goocanvaspolyline.c:224
+msgid "The length of the arrow tip, as a multiple of the line width"
+msgstr "Lungimea vârfului săgeții, ca un multiplu de lățimea liniei"
+
+#: src/goocanvaspolyline.c:231
+msgid "The x coordinate of the left-most point of the polyline"
+msgstr "Coordonata x a punctului cel mai din stânga al liniei frânte"
+
+#: src/goocanvaspolyline.c:239
+msgid "The y coordinate of the top-most point of the polyline"
+msgstr "Coordonata y a punctului cel mai de sus a liniei frânte"
+
+#: src/goocanvaspolyline.c:247
+msgid "The width of the polyline"
+msgstr "Lățimea liniei frânte"
+
+#: src/goocanvaspolyline.c:254
+msgid "The height of the polyline"
+msgstr "Înălțimea liniei frânte"
+
+#: src/goocanvasrect.c:61
+msgid "The x coordinate of the rectangle"
+msgstr "Coordonata x a dreptunghiului"
+
+#: src/goocanvasrect.c:69
+msgid "The y coordinate of the rectangle"
+msgstr "Coordonata y a dreptunghiului"
+
+#: src/goocanvasrect.c:77
+msgid "The width of the rectangle"
+msgstr "Lățimea dreptunghiului"
+
+#: src/goocanvasrect.c:84
+msgid "The height of the rectangle"
+msgstr "Înălțimea dreptunghiului"
+
+#: src/goocanvasrect.c:91
+msgid "The horizontal radius to use for rounded corners"
+msgstr "Raza orizontală de folosit pentru colțuri rotunjite"
+
+#: src/goocanvasrect.c:98
+msgid "The vertical radius to use for rounded corners"
+msgstr "Raza verticală de folosit pentru colțuri rotunjite"
+
+#: src/goocanvastable.c:237
+msgid "Row Spacing"
+msgstr "Spațiere rânduri"
+
+#: src/goocanvastable.c:238
+msgid "The default space between rows"
+msgstr "Spațiu implicit între rânduri"
+
+#: src/goocanvastable.c:244
+msgid "Column Spacing"
+msgstr "Spațiere coloană"
+
+#: src/goocanvastable.c:245
+msgid "The default space between columns"
+msgstr "Spațiu implicit între coloane"
+
+#: src/goocanvastable.c:251
+msgid "Homogenous Rows"
+msgstr "Rânduri omogene"
+
+#: src/goocanvastable.c:252
+msgid "If all rows are the same height"
+msgstr "Dacă toate rândurile au aceeași înălțime"
+
+#: src/goocanvastable.c:258
+msgid "Homogenous Columns"
+msgstr "Coloane omogene"
+
+#: src/goocanvastable.c:259
+msgid "If all columns are the same width"
+msgstr "Dacă toate coloanele au aceeași lățime"
+
+#: src/goocanvastable.c:264
+msgid "X Border Spacing"
+msgstr "Spațiere bordură X"
+
+#: src/goocanvastable.c:265
+msgid ""
+"The amount of spacing between the lefmost and rightmost cells and the border "
+"grid line"
+msgstr ""
+"Cantitatea de spațiere dintre celulele din stânga și dreapta și bordura "
+"liniei grilă"
+
+#: src/goocanvastable.c:270
+msgid "Y Border Spacing"
+msgstr "Spațiere bordură Y"
+
+#: src/goocanvastable.c:271
+msgid ""
+"The amount of spacing between the topmost and bottommost cells and the "
+"border grid line"
+msgstr ""
+"Cantitatea de spațiere dintre celulele de sus și de jos și bordura liniei "
+"grilă"
+
+#: src/goocanvastable.c:277
+msgid "The width of the grid line to draw between rows"
+msgstr "Lățimea liniei grilei de desenat între rânduri"
+
+#: src/goocanvastable.c:284
+msgid "The width of the grid line to draw between columns"
+msgstr "Lățimea liniei grilei de desenat între coloane"
+
+#: src/goocanvastable.c:293
+msgid "Left Padding"
+msgstr "Padding stânga"
+
+#: src/goocanvastable.c:294
+msgid "Extra space to add to the left of the item"
+msgstr "Spațiu extra de adăugat la stânga elementului"
+
+#: src/goocanvastable.c:299
+msgid "Right Padding"
+msgstr "Padding dreapta"
+
+#: src/goocanvastable.c:300
+msgid "Extra space to add to the right of the item"
+msgstr "Spațiu extra de adăugat la dreapta elementului"
+
+#: src/goocanvastable.c:305
+msgid "Top Padding"
+msgstr "Padding de sus"
+
+#: src/goocanvastable.c:306
+msgid "Extra space to add above the item"
+msgstr "Spațiu extra de adăugat deasupra elementului"
+
+#: src/goocanvastable.c:311
+msgid "Bottom Padding"
+msgstr "Padding jos"
+
+#: src/goocanvastable.c:312
+msgid "Extra space to add below the item"
+msgstr "Spațiu extra de adăugat dedesubtul elementului"
+
+#: src/goocanvastable.c:318
+msgid "X Align"
+msgstr "Aliniere X"
+
+#: src/goocanvastable.c:319
+msgid ""
+"The horizontal position of the item within its allocated space. 0.0 is left-"
+"aligned, 1.0 is right-aligned"
+msgstr ""
+"Poziția orizontală a elementului din spațiul lui alocat. 0.0 este aliniat la "
+"stânga, 1.0 este aliniat la dreapta"
+
+#: src/goocanvastable.c:324
+msgid "Y Align"
+msgstr "Aliniere Y"
+
+#: src/goocanvastable.c:325
+msgid ""
+"The vertical position of the item within its allocated space. 0.0 is top-"
+"aligned, 1.0 is bottom-aligned"
+msgstr ""
+"Poziția verticală a elementului în cadrul spațiului său alocat. 0.0 este "
+"aliniat la top, 1.0 este aliniat la bază"
+
+#: src/goocanvastable.c:331
+msgid "Row"
+msgstr "Rând"
+
+#: src/goocanvastable.c:332
+msgid "The row to place the item in"
+msgstr "Rîndul în care să se plaseze elementul"
+
+#: src/goocanvastable.c:337
+msgid "Column"
+msgstr "Coloană"
+
+#: src/goocanvastable.c:338
+msgid "The column to place the item in"
+msgstr "Coloana în care să se plaseze elementul"
+
+#: src/goocanvastable.c:343
+msgid "Rows"
+msgstr "Rânduri"
+
+#: src/goocanvastable.c:344
+msgid "The number of rows that the item spans"
+msgstr "Numărul de rânduri ocupat de element"
+
+#: src/goocanvastable.c:349
+msgid "Columns"
+msgstr "Coloane"
+
+#: src/goocanvastable.c:350
+msgid "The number of columns that the item spans"
+msgstr "Numărul de coloane ocupat de element"
+
+#: src/goocanvastable.c:356
+msgid "X Expand"
+msgstr "Extinde X"
+
+#: src/goocanvastable.c:357
+msgid "If the item expands horizontally as the table expands"
+msgstr ""
+"Dacă elementul se expandează orizontal pe măsură ce tabelul se expandează"
+
+#: src/goocanvastable.c:362
+msgid "X Fill"
+msgstr "Umple X"
+
+#: src/goocanvastable.c:363
+msgid "If the item fills all horizontal allocated space"
+msgstr "Dacă elementul umple tot spațiul orizontal alocat"
+
+#: src/goocanvastable.c:368
+msgid "X Shrink"
+msgstr "Micșorează X"
+
+#: src/goocanvastable.c:369
+msgid "If the item can shrink smaller than its requested size horizontally"
+msgstr ""
+"Dacă elementul se poate micșora mai mic decât dimensiunea orizontală cerută"
+
+#: src/goocanvastable.c:374
+msgid "Y Expand"
+msgstr "Extinde Y"
+
+#: src/goocanvastable.c:375
+msgid "If the item expands vertically as the table expands"
+msgstr ""
+"Dacă elementul se expandează vertical pe măsură ce tabelul se expandează"
+
+#: src/goocanvastable.c:380
+msgid "Y Fill"
+msgstr "Umple Y"
+
+#: src/goocanvastable.c:381
+msgid "If the item fills all vertical allocated space"
+msgstr "Dacă elementul umple tot spațiul vertical alocat"
+
+#: src/goocanvastable.c:386
+msgid "Y Shrink"
+msgstr "Micșorează Y"
+
+#: src/goocanvastable.c:387
+msgid "If the item can shrink smaller than its requested size vertically"
+msgstr ""
+"Dacă elementul se poate micșora mai mic decât dimensiunea verticală cerută"
+
+#: src/goocanvastext.c:94
+msgid "Text"
+msgstr "Text"
+
+#: src/goocanvastext.c:95
+msgid "The text to display"
+msgstr "Textul de afișat"
+
+#: src/goocanvastext.c:101
+msgid "Use Markup"
+msgstr "Utilizează marcare"
+
+#: src/goocanvastext.c:102
+msgid "Whether to parse PangoMarkup in the text, to support different styles"
+msgstr ""
+"Dacă să se parseze PangoMarkup din text, pentru a suporta stiluri diferite"
+
+#: src/goocanvastext.c:108
+msgid "Ellipsize"
+msgstr "Prescurtare"
+
+#: src/goocanvastext.c:109
+msgid ""
+"The preferred place to ellipsize the string, if the label does not have "
+"enough room to display the entire string"
+msgstr ""
+"Locul preferat pentru transformarea șirului în elipsă, dacă eticheta nu are "
+"destul spațiu să afișeze întregul șir"
+
+#: src/goocanvastext.c:116
+msgid "Wrap"
+msgstr "Încadrează"
+
+#: src/goocanvastext.c:117
+msgid "The preferred method of wrapping the string if a width has been set"
+msgstr ""
+"Metoda preferată de încadrare a șirului dacă lățimea nu a fost stabilită"
+
+#: src/goocanvastext.c:126
+msgid "The x coordinate of the text"
+msgstr "Coordonata x a textului"
+
+#: src/goocanvastext.c:134
+msgid "The y coordinate of the text"
+msgstr "Coordonata y a textului"
+
+#: src/goocanvastext.c:142
+msgid ""
+"The width to use to layout the text, or -1 to let the text use as much "
+"horizontal space as needed"
+msgstr ""
+"Lățimea de folosit pentru a aranja textul, sau -1 pentru a lăsa textul să "
+"folosească cât spațiu orizontal este nevoie"
+
+#: src/goocanvastext.c:150
+msgid ""
+"The height to use to layout the text, or -1 to let the text use as much "
+"vertical space as needed"
+msgstr ""
+"Înălțimea de folosit pentru a aranja textul, sau -1 pentru a lăsa textul să "
+"folosească cât spațiu vertical este nevoie"
+
+#: src/goocanvastext.c:159
+msgid "How to position the text relative to the given x and y coordinates"
+msgstr "Cum se poziționează textul în relație cu coordonatele x și y date"
+
+#: src/goocanvastext.c:166
+msgid "Alignment"
+msgstr "Aliniere"
+
+#: src/goocanvastext.c:167
+msgid "How to align the text"
+msgstr "Cum se aliniază textul"
+
+#: src/goocanvaswidget.c:547
+msgid "Widget"
+msgstr "Widget"
+
+#: src/goocanvaswidget.c:548
+msgid "The widget to place in the canvas"
+msgstr "Widgetul de plasat în canava"
+
+#: src/goocanvaswidget.c:555
+msgid "The x coordinate of the widget"
+msgstr "Coordonata x a widgetului"
+
+#: src/goocanvaswidget.c:563
+msgid "The y coordinate of the widget"
+msgstr "Coordonata y a widgetului"
+
+#: src/goocanvaswidget.c:571
+msgid "The width of the widget, or -1 to use its requested width"
+msgstr "Lățimea widgetului, sau -1 pentru a folosi lățimea cerută"
+
+#: src/goocanvaswidget.c:579
+msgid "The height of the widget, or -1 to use its requested height"
+msgstr "Înălțimea widgetului, sau -1 pentru a folosi înălțimea cerută"
+
+#: src/goocanvaswidget.c:588
+msgid ""
+"How to position the widget relative to the item's x and y coordinate settings"
+msgstr ""
+"Cum se poziționează widgetul în relație cu configurările coordonatelor x și "
+"y ale elementului"
