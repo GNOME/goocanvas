@@ -4,6 +4,7 @@ libname = '@0@-@1@'.format(goocanvas_name, goocanvas_api_version)
 
 headers = files(
   'goocanvasellipse.h',
+  'goocanvasexports.h',
   'goocanvasgrid.h',
   'goocanvasgroup.h',
   'goocanvas.h',
