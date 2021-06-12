@@ -11,6 +11,7 @@
 #include <math.h>
 #include <gtk/gtk.h>
 #include "goocanvas.h"
+#include "goocanvasatk.h"
 
 
 /*
