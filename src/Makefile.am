@@ -118,9 +118,9 @@ goocanvasenumtypes.h: stamp-goocanvasenumtypes.h
 	@true
 stamp-goocanvasenumtypes.h: @REBUILD@ $(goo_canvas_public_headers) Makefile
 	(cd $(srcdir) && $(GLIB_MKENUMS) \
-		--fhead "#ifndef __GOO_CANVAS_ENUM_TYPES_H__\n#define __GOO_CANVAS_ENUM_TYPES_H__\n\n#include <glib-object.h>\n\nG_BEGIN_DECLS\n" \
+		--fhead "#ifndef __GOO_CANVAS_ENUM_TYPES_H__\n#define __GOO_CANVAS_ENUM_TYPES_H__\n\n#include <glib-object.h>\n#include \"goocanvasexports.h\"\n\nG_BEGIN_DECLS\n" \
 		--fprod "/* Enumerations from \"@filename@\" */\n" \
-		--vhead "GType @enum_name@_get_type (void);\n#define GOO_TYPE_@ENUMSHORT@ (@enum_name@_get_type())\n\n\n" \
+		--vhead "GOOCANVAS_API\nGType @enum_name@_get_type (void);\n#define GOO_TYPE_@ENUMSHORT@ (@enum_name@_get_type())\n\n\n" \
 		--ftail "G_END_DECLS\n\n#endif /* __GOO_CANVAS_ENUM_TYPES_H__ */" \
 		$(libgoocanvas_public_headers)) >> xgen-gtbh \
 	&& (cmp -s xgen-gtbh goocanvasenumtypes.h || cp xgen-gtbh goocanvasenumtypes.h ) \
