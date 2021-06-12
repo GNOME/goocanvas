@@ -84,7 +84,9 @@ struct _GooCanvasGridClass
 };
 
 
+GOOCANVAS_API
 GType          goo_canvas_grid_get_type      (void) G_GNUC_CONST;
+GOOCANVAS_API
 GooCanvasItem* goo_canvas_grid_new           (GooCanvasItem      *parent,
 					      gdouble             x,
 					      gdouble             y,
@@ -135,7 +137,9 @@ struct _GooCanvasGridModelClass
 };
 
 
+GOOCANVAS_API
 GType               goo_canvas_grid_model_get_type (void) G_GNUC_CONST;
+GOOCANVAS_API
 GooCanvasItemModel* goo_canvas_grid_model_new      (GooCanvasItemModel *parent,
 						    gdouble             x,
 						    gdouble             y,

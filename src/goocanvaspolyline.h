@@ -31,11 +31,17 @@ struct _GooCanvasPoints
 };
 
 #define GOO_TYPE_CANVAS_POINTS goo_canvas_points_get_type()
+GOOCANVAS_API
 GType            goo_canvas_points_get_type (void);
+GOOCANVAS_API
 GooCanvasPoints* goo_canvas_points_new      (int              num_points);
+GOOCANVAS_API
 GooCanvasPoints* goo_canvas_points_ref      (GooCanvasPoints *points);
+GOOCANVAS_API
 void             goo_canvas_points_unref    (GooCanvasPoints *points);
+GOOCANVAS_API
 void             goo_canvas_points_set_point(GooCanvasPoints *points, int idx, double x, double y);
+GOOCANVAS_API
 void             goo_canvas_points_get_point(GooCanvasPoints *points, int idx, double *x, double *y);
 
 #define GOO_CANVAS_POLYLINE_NUM_ARROW_POINTS     5		/* number of points in an arrowhead */
@@ -106,13 +112,16 @@ struct _GooCanvasPolylineClass
 };
 
 
+GOOCANVAS_API
 GType               goo_canvas_polyline_get_type       (void) G_GNUC_CONST;
 
+GOOCANVAS_API
 GooCanvasItem*      goo_canvas_polyline_new            (GooCanvasItem      *parent,
 							gboolean            close_path,
 							gint                num_points,
 							...);
 
+GOOCANVAS_API
 GooCanvasItem*      goo_canvas_polyline_new_line       (GooCanvasItem      *parent,
 							gdouble             x1,
 							gdouble             y1,
@@ -159,13 +168,16 @@ struct _GooCanvasPolylineModelClass
 };
 
 
+GOOCANVAS_API
 GType               goo_canvas_polyline_model_get_type  (void) G_GNUC_CONST;
 
+GOOCANVAS_API
 GooCanvasItemModel* goo_canvas_polyline_model_new      (GooCanvasItemModel *parent,
 							gboolean            close_path,
 							gint                num_points,
 							...);
 
+GOOCANVAS_API
 GooCanvasItemModel* goo_canvas_polyline_model_new_line (GooCanvasItemModel *parent,
 							gdouble             x1,
 							gdouble             y1,

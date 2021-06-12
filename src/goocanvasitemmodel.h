@@ -151,43 +151,56 @@ struct _GooCanvasItemModelIface
 };
 
 
+GOOCANVAS_API
 GType               goo_canvas_item_model_get_type       (void) G_GNUC_CONST;
 
 
 /*
  * Group functions - these should only be called on container models.
  */
+GOOCANVAS_API
 gint                goo_canvas_item_model_get_n_children (GooCanvasItemModel *model);
+GOOCANVAS_API
 GooCanvasItemModel* goo_canvas_item_model_get_child      (GooCanvasItemModel *model,
 							  gint                child_num);
+GOOCANVAS_API
 void                goo_canvas_item_model_add_child      (GooCanvasItemModel *model,
 							  GooCanvasItemModel *child,
 							  gint                position);
+GOOCANVAS_API
 void                goo_canvas_item_model_move_child     (GooCanvasItemModel *model,
 							  gint                old_position,
 							  gint                new_position);
+GOOCANVAS_API
 void                goo_canvas_item_model_remove_child   (GooCanvasItemModel *model,
 							  gint                child_num);
+GOOCANVAS_API
 gint                goo_canvas_item_model_find_child     (GooCanvasItemModel *model,
 							  GooCanvasItemModel *child);
 
+GOOCANVAS_API
 void     goo_canvas_item_model_get_child_property	 (GooCanvasItemModel   *model,
 							  GooCanvasItemModel   *child,
 							  const gchar          *property_name,
 							  GValue               *value);
+GOOCANVAS_API
 void     goo_canvas_item_model_set_child_property	 (GooCanvasItemModel   *model,
 							  GooCanvasItemModel   *child,
 							  const gchar          *property_name,
 							  const GValue         *value);
+GOOCANVAS_API
 void     goo_canvas_item_model_get_child_properties	 (GooCanvasItemModel   *model,
 							  GooCanvasItemModel   *child,
 							  ...) G_GNUC_NULL_TERMINATED;
+GOOCANVAS_API
 void     goo_canvas_item_model_set_child_properties	 (GooCanvasItemModel   *model,
 							  GooCanvasItemModel   *child,
 							  ...) G_GNUC_NULL_TERMINATED;
+GOOCANVAS_API
 void     goo_canvas_item_model_get_child_properties_valist (GooCanvasItemModel   *model,
 							    GooCanvasItemModel   *child,
 							    va_list	         var_args);
+GOOCANVAS_API
 void     goo_canvas_item_model_set_child_properties_valist (GooCanvasItemModel   *model,
 							    GooCanvasItemModel   *child,
 							    va_list	         var_args);
@@ -196,55 +209,73 @@ void     goo_canvas_item_model_set_child_properties_valist (GooCanvasItemModel  
 /*
  * Model functions - these are safe to call on all models.
  */
+GOOCANVAS_API
 GooCanvasItemModel* goo_canvas_item_model_get_parent     (GooCanvasItemModel *model);
+GOOCANVAS_API
 void                goo_canvas_item_model_set_parent	 (GooCanvasItemModel *model,
 							  GooCanvasItemModel *parent);
+GOOCANVAS_API
 void                goo_canvas_item_model_remove         (GooCanvasItemModel *model);
+GOOCANVAS_API
 gboolean            goo_canvas_item_model_is_container   (GooCanvasItemModel *model);
 
+GOOCANVAS_API
 void                goo_canvas_item_model_raise          (GooCanvasItemModel *model,
 							  GooCanvasItemModel *above);
+GOOCANVAS_API
 void                goo_canvas_item_model_lower          (GooCanvasItemModel *model,
 							  GooCanvasItemModel *below);
 
+GOOCANVAS_API
 gboolean            goo_canvas_item_model_get_transform  (GooCanvasItemModel *model,
 							  cairo_matrix_t     *transform);
+GOOCANVAS_API
 void                goo_canvas_item_model_set_transform  (GooCanvasItemModel   *model,
 							  const cairo_matrix_t *transform);
+GOOCANVAS_API
 gboolean	    goo_canvas_item_model_get_simple_transform (GooCanvasItemModel *model,
 								gdouble            *x,
 								gdouble            *y,
 								gdouble            *scale,
 								gdouble            *rotation);
+GOOCANVAS_API
 void                goo_canvas_item_model_set_simple_transform (GooCanvasItemModel *model,
 								gdouble             x,
 								gdouble             y,
 								gdouble             scale,
 								gdouble             rotation);
 
+GOOCANVAS_API
 void                goo_canvas_item_model_translate      (GooCanvasItemModel *model,
 							  gdouble             tx,
 							  gdouble             ty);
+GOOCANVAS_API
 void                goo_canvas_item_model_scale          (GooCanvasItemModel *model,
 							  gdouble             sx,
 							  gdouble             sy);
+GOOCANVAS_API
 void                goo_canvas_item_model_rotate         (GooCanvasItemModel *model,
 							  gdouble             degrees,
 							  gdouble             cx,
 							  gdouble             cy);
+GOOCANVAS_API
 void                goo_canvas_item_model_skew_x         (GooCanvasItemModel *model,
 							  gdouble             degrees,
 							  gdouble             cx,
 							  gdouble             cy);
+GOOCANVAS_API
 void                goo_canvas_item_model_skew_y         (GooCanvasItemModel *model,
 							  gdouble             degrees,
 							  gdouble             cx,
 							  gdouble             cy);
 
+GOOCANVAS_API
 GooCanvasStyle*     goo_canvas_item_model_get_style      (GooCanvasItemModel *model);
+GOOCANVAS_API
 void                goo_canvas_item_model_set_style      (GooCanvasItemModel *model,
 							  GooCanvasStyle  *style);
 
+GOOCANVAS_API
 void                goo_canvas_item_model_animate        (GooCanvasItemModel *model,
 							  gdouble             x,
 							  gdouble             y,
@@ -254,17 +285,21 @@ void                goo_canvas_item_model_animate        (GooCanvasItemModel *mo
 							  gint                duration,
 							  gint                step_time,
 							  GooCanvasAnimateType type);
+GOOCANVAS_API
 void                goo_canvas_item_model_stop_animation (GooCanvasItemModel *model);
 
 
 /*
  * Functions to support child properties when implementing new canvas items.
  */
+GOOCANVAS_API
 void         goo_canvas_item_model_class_install_child_property (GObjectClass *mclass,
 								 guint	 property_id,
 								 GParamSpec	*pspec);
+GOOCANVAS_API
 GParamSpec*  goo_canvas_item_model_class_find_child_property	(GObjectClass	*mclass,
 								 const gchar	*property_name);
+GOOCANVAS_API
 GParamSpec** goo_canvas_item_model_class_list_child_properties  (GObjectClass	*mclass,
 								 guint	*n_properties);
 

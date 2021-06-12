@@ -8,12 +8,15 @@
 #define __GOO_CANVAS_ATK_H__
 
 #include <gtk/gtk.h>
-
+#include "goocanvasexports.h"
 
 G_BEGIN_DECLS
 
+GOOCANVAS_API
 GType    goo_canvas_accessible_factory_get_type  (void) G_GNUC_CONST;
+GOOCANVAS_API
 GType    goo_canvas_item_accessible_factory_get_type  (void) G_GNUC_CONST;
+GOOCANVAS_API
 GType    goo_canvas_widget_accessible_factory_get_type  (void) G_GNUC_CONST;
 
 

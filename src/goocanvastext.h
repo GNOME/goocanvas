@@ -65,8 +65,10 @@ struct _GooCanvasTextClass
 };
 
 
+GOOCANVAS_API
 GType               goo_canvas_text_get_type  (void) G_GNUC_CONST;
 
+GOOCANVAS_API
 GooCanvasItem*      goo_canvas_text_new       (GooCanvasItem      *parent,
 					       const char         *string,
 					       gdouble             x,
@@ -75,6 +77,7 @@ GooCanvasItem*      goo_canvas_text_new       (GooCanvasItem      *parent,
 					       GooCanvasAnchorType       anchor,
 					       ...);
 
+GOOCANVAS_API
 void	goo_canvas_text_get_natural_extents   (GooCanvasText  *text,
 					       PangoRectangle *ink_rect,
 					       PangoRectangle *logical_rect);
@@ -117,8 +120,10 @@ struct _GooCanvasTextModelClass
 };
 
 
+GOOCANVAS_API
 GType               goo_canvas_text_model_get_type  (void) G_GNUC_CONST;
 
+GOOCANVAS_API
 GooCanvasItemModel* goo_canvas_text_model_new (GooCanvasItemModel *parent,
 					       const char         *string,
 					       gdouble             x,

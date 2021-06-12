@@ -85,7 +85,9 @@ struct _GooCanvasTableClass
 };
 
 
+GOOCANVAS_API
 GType          goo_canvas_table_get_type    (void) G_GNUC_CONST;
+GOOCANVAS_API
 GooCanvasItem* goo_canvas_table_new         (GooCanvasItem  *parent,
 					     ...);
 
@@ -129,7 +131,9 @@ struct _GooCanvasTableModelClass
 };
 
 
+GOOCANVAS_API
 GType               goo_canvas_table_model_get_type (void) G_GNUC_CONST;
+GOOCANVAS_API
 GooCanvasItemModel* goo_canvas_table_model_new      (GooCanvasItemModel *parent,
 						     ...);
 
