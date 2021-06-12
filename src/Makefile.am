@@ -29,6 +29,7 @@ libgoocanvasincludedir = $(includedir)/goocanvas-3.0
 
 libgoocanvas_public_headers =		\
 	goocanvasellipse.h		\
+	goocanvasexports.h		\
 	goocanvasgrid.h			\
 	goocanvasgroup.h		\
 	goocanvasimage.h		\
