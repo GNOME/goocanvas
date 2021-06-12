@@ -84,7 +84,7 @@ libgoocanvas = shared_library(
   sources: sources + enum_sources,
   include_directories: top_inc,
   dependencies: deps + private_deps,
-  c_args: '-DG_LOG_DOMAIN="GooCanvas"',
+  c_args: [ '-DG_LOG_DOMAIN="GooCanvas"', '-DBUILDING_GOOCANVAS'],
   install: true,
   install_rpath: goocanvas_libdir,
 )

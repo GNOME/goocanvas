@@ -58,7 +58,15 @@ cairo_dep = dependency('cairo', version: '>= 1.10.0')
 glib_dep = dependency('glib-2.0', version: '>= 2.28.0')
 gtk_dep = dependency('gtk+-3.0', version: '>= 3.0.0')
 
-m_dep = cc.find_library('m')
+m_dep = cc.find_library('m', required: false)
+
+if cc.get_argument_syntax() == 'msvc'
+  add_project_arguments(cc.get_supported_arguments([
+    '-utf-8',  # Use UTF-8 mode
+    '-FImsvc_recommended_pragmas.h',
+    '-D_USE_MATH_DEFINES',
+  ]), language: ['c'])
+endif
 
 enable_introspection = dependency('gobject-introspection-1.0', version: '>= 0.6.7', required: get_option('introspection')).found()
 
