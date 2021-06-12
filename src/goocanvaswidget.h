@@ -52,7 +52,9 @@ struct _GooCanvasWidgetClass
 };
 
 
+GOOCANVAS_API
 GType          goo_canvas_widget_get_type          (void) G_GNUC_CONST;
+GOOCANVAS_API
 GooCanvasItem* goo_canvas_widget_new               (GooCanvasItem    *parent,
 						    GtkWidget        *widget,
 						    gdouble           x,

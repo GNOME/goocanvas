@@ -8,6 +8,7 @@
 #define __GOO_CANVAS_UTILS_H__
 
 #include <gtk/gtk.h>
+#include "goocanvasexports.h"
 
 G_BEGIN_DECLS
 
@@ -224,7 +225,9 @@ union _GooCanvasPathCommand
 };
 
 
+GOOCANVAS_API
 GArray*	goo_canvas_parse_path_data	(const gchar       *path_data);
+GOOCANVAS_API
 void	goo_canvas_create_path		(GArray		   *commands,
 					 cairo_t           *cr);
 
@@ -339,40 +342,56 @@ typedef cairo_pattern_t		GooCairoPattern;
 
 
 #define GOO_TYPE_CANVAS_LINE_DASH  (goo_canvas_line_dash_get_type ())
+GOOCANVAS_API
 GType              goo_canvas_line_dash_get_type (void) G_GNUC_CONST;
+GOOCANVAS_API
 GooCanvasLineDash* goo_canvas_line_dash_new   (gint               num_dashes,
 					       ...);
+GOOCANVAS_API
 GooCanvasLineDash* goo_canvas_line_dash_newv  (gint               num_dashes,
                                                double            *dashes);
+GOOCANVAS_API
 GooCanvasLineDash* goo_canvas_line_dash_ref   (GooCanvasLineDash *dash);
+GOOCANVAS_API
 void               goo_canvas_line_dash_unref (GooCanvasLineDash *dash);
+GOOCANVAS_API
 void		   goo_canvas_line_dash_set_offset (GooCanvasLineDash *dash,
 						    double             dash_offset);
 
 #define GOO_TYPE_CAIRO_MATRIX	   (goo_cairo_matrix_get_type())
+GOOCANVAS_API
 GType              goo_cairo_matrix_get_type  (void) G_GNUC_CONST;
+GOOCANVAS_API
 cairo_matrix_t*    goo_cairo_matrix_copy      (const cairo_matrix_t *matrix);
+GOOCANVAS_API
 void               goo_cairo_matrix_free      (cairo_matrix_t       *matrix);
 
 #define GOO_TYPE_CAIRO_PATTERN	   (goo_cairo_pattern_get_type ())
+GOOCANVAS_API
 GType              goo_cairo_pattern_get_type (void) G_GNUC_CONST;
 
 #define GOO_TYPE_CAIRO_FILL_RULE   (goo_cairo_fill_rule_get_type ())
+GOOCANVAS_API
 GType		   goo_cairo_fill_rule_get_type (void) G_GNUC_CONST;
 
 #define GOO_TYPE_CAIRO_OPERATOR    (goo_cairo_operator_get_type())
+GOOCANVAS_API
 GType		   goo_cairo_operator_get_type  (void) G_GNUC_CONST;
 
 #define GOO_TYPE_CAIRO_ANTIALIAS   (goo_cairo_antialias_get_type())
+GOOCANVAS_API
 GType		   goo_cairo_antialias_get_type (void) G_GNUC_CONST;
 
 #define GOO_TYPE_CAIRO_LINE_CAP    (goo_cairo_line_cap_get_type ())
+GOOCANVAS_API
 GType		   goo_cairo_line_cap_get_type  (void) G_GNUC_CONST;
 
 #define GOO_TYPE_CAIRO_LINE_JOIN   (goo_cairo_line_join_get_type ())
+GOOCANVAS_API
 GType		   goo_cairo_line_join_get_type (void) G_GNUC_CONST;
 
 #define GOO_TYPE_CAIRO_HINT_METRICS (goo_cairo_hint_metrics_get_type ())
+GOOCANVAS_API
 GType		   goo_cairo_hint_metrics_get_type (void) G_GNUC_CONST;
 
 

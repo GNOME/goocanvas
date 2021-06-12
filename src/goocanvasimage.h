@@ -60,8 +60,10 @@ struct _GooCanvasImageClass
 };
 
 
+GOOCANVAS_API
 GType               goo_canvas_image_get_type  (void) G_GNUC_CONST;
 
+GOOCANVAS_API
 GooCanvasItem*      goo_canvas_image_new       (GooCanvasItem      *parent,
 						GdkPixbuf          *pixbuf,
 						gdouble             x,
@@ -107,8 +109,10 @@ struct _GooCanvasImageModelClass
 };
 
 
+GOOCANVAS_API
 GType               goo_canvas_image_model_get_type  (void) G_GNUC_CONST;
 
+GOOCANVAS_API
 GooCanvasItemModel* goo_canvas_image_model_new (GooCanvasItemModel *parent,
 						GdkPixbuf          *pixbuf,
 						gdouble             x,

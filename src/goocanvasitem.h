@@ -49,6 +49,7 @@ struct _GooCanvasBounds
   gdouble x1, y1, x2, y2;
 };
 
+GOOCANVAS_API
 GType goo_canvas_bounds_get_type (void) G_GNUC_CONST;
 #define GOO_TYPE_CANVAS_BOUNDS (goo_canvas_bounds_get_type ())
 
@@ -311,47 +312,61 @@ struct _GooCanvasItemIface
 };
 
 
+GOOCANVAS_API
 GType              goo_canvas_item_get_type       (void) G_GNUC_CONST;
 
 
 /*
  * Group functions - these should only be called on container items.
  */
+GOOCANVAS_API
 gint               goo_canvas_item_get_n_children (GooCanvasItem   *item);
+GOOCANVAS_API
 GooCanvasItem*     goo_canvas_item_get_child      (GooCanvasItem   *item,
 						   gint             child_num);
+GOOCANVAS_API
 gint               goo_canvas_item_find_child     (GooCanvasItem   *item,
 						   GooCanvasItem   *child);
+GOOCANVAS_API
 void               goo_canvas_item_add_child      (GooCanvasItem   *item,
 						   GooCanvasItem   *child,
 						   gint             position);
+GOOCANVAS_API
 void               goo_canvas_item_move_child     (GooCanvasItem   *item,
 						   gint             old_position,
 						   gint             new_position);
+GOOCANVAS_API
 void               goo_canvas_item_remove_child   (GooCanvasItem   *item,
 						   gint             child_num);
 
+GOOCANVAS_API
 void  goo_canvas_item_get_child_property	  (GooCanvasItem   *item,
 						   GooCanvasItem   *child,
 						   const gchar     *property_name,
 						   GValue          *value);
+GOOCANVAS_API
 void  goo_canvas_item_set_child_property	  (GooCanvasItem   *item,
 						   GooCanvasItem   *child,
 						   const gchar     *property_name,
 						   const GValue    *value);
+GOOCANVAS_API
 void  goo_canvas_item_get_child_properties        (GooCanvasItem   *item,
 						   GooCanvasItem   *child,
 						   ...) G_GNUC_NULL_TERMINATED;
+GOOCANVAS_API
 void  goo_canvas_item_set_child_properties        (GooCanvasItem   *item,
 						   GooCanvasItem   *child,
 						   ...) G_GNUC_NULL_TERMINATED;
+GOOCANVAS_API
 void  goo_canvas_item_get_child_properties_valist (GooCanvasItem   *item,
 						   GooCanvasItem   *child,
 						   va_list	    var_args);
+GOOCANVAS_API
 void  goo_canvas_item_set_child_properties_valist (GooCanvasItem   *item,
 						   GooCanvasItem   *child,
 						   va_list	    var_args);
 
+GOOCANVAS_API
 gboolean goo_canvas_item_get_transform_for_child  (GooCanvasItem   *item,
 						   GooCanvasItem   *child,
 						   cairo_matrix_t  *transform);
@@ -360,58 +375,78 @@ gboolean goo_canvas_item_get_transform_for_child  (GooCanvasItem   *item,
 /*
  * Item functions - these are safe to call on all items.
  */
+GOOCANVAS_API
 GooCanvas*         goo_canvas_item_get_canvas     (GooCanvasItem   *item);
+GOOCANVAS_API
 void               goo_canvas_item_set_canvas     (GooCanvasItem   *item,
 						   GooCanvas       *canvas);
+GOOCANVAS_API
 GooCanvasItem*     goo_canvas_item_get_parent     (GooCanvasItem   *item);
+GOOCANVAS_API
 void               goo_canvas_item_set_parent	  (GooCanvasItem   *item,
 						   GooCanvasItem   *parent);
+GOOCANVAS_API
 void               goo_canvas_item_remove         (GooCanvasItem   *item);
+GOOCANVAS_API
 gboolean           goo_canvas_item_is_container   (GooCanvasItem   *item);
 
+GOOCANVAS_API
 void               goo_canvas_item_raise          (GooCanvasItem   *item,
 						   GooCanvasItem   *above);
+GOOCANVAS_API
 void               goo_canvas_item_lower          (GooCanvasItem   *item,
 						   GooCanvasItem   *below);
 
+GOOCANVAS_API
 gboolean           goo_canvas_item_get_transform  (GooCanvasItem   *item,
 						   cairo_matrix_t  *transform);
+GOOCANVAS_API
 void               goo_canvas_item_set_transform  (GooCanvasItem         *item,
 						   const cairo_matrix_t  *transform);
+GOOCANVAS_API
 gboolean	   goo_canvas_item_get_simple_transform (GooCanvasItem   *item,
 							 gdouble         *x,
 							 gdouble         *y,
 							 gdouble         *scale,
 							 gdouble         *rotation);
+GOOCANVAS_API
 void               goo_canvas_item_set_simple_transform (GooCanvasItem   *item,
 							 gdouble          x,
 							 gdouble          y,
 							 gdouble          scale,
 							 gdouble          rotation);
 
+GOOCANVAS_API
 void               goo_canvas_item_translate      (GooCanvasItem   *item,
 						   gdouble          tx,
 						   gdouble          ty);
+GOOCANVAS_API
 void               goo_canvas_item_scale          (GooCanvasItem   *item,
 						   gdouble          sx,
 						   gdouble          sy);
+GOOCANVAS_API
 void               goo_canvas_item_rotate         (GooCanvasItem   *item,
 						   gdouble          degrees,
 						   gdouble          cx,
 						   gdouble          cy);
+GOOCANVAS_API
 void               goo_canvas_item_skew_x         (GooCanvasItem   *item,
 						   gdouble          degrees,
 						   gdouble          cx,
 						   gdouble          cy);
+GOOCANVAS_API
 void               goo_canvas_item_skew_y         (GooCanvasItem   *item,
 						   gdouble          degrees,
 						   gdouble          cx,
 						   gdouble          cy);
 
+GOOCANVAS_API
 GooCanvasStyle*    goo_canvas_item_get_style      (GooCanvasItem   *item);
+GOOCANVAS_API
 void               goo_canvas_item_set_style      (GooCanvasItem   *item,
 						   GooCanvasStyle  *style);
 
+GOOCANVAS_API
 void               goo_canvas_item_animate        (GooCanvasItem   *item,
 						   gdouble           x,
 						   gdouble           y,
@@ -421,12 +456,15 @@ void               goo_canvas_item_animate        (GooCanvasItem   *item,
 						   gint             duration,
 						   gint             step_time,
 						   GooCanvasAnimateType type);
+GOOCANVAS_API
 void               goo_canvas_item_stop_animation (GooCanvasItem   *item);
 
 
 
+GOOCANVAS_API
 void               goo_canvas_item_get_bounds	  (GooCanvasItem   *item,
 						   GooCanvasBounds *bounds);
+GOOCANVAS_API
 GList*		   goo_canvas_item_get_items_at   (GooCanvasItem   *item,
 						   gdouble          x,
 						   gdouble          y,
@@ -434,33 +472,44 @@ GList*		   goo_canvas_item_get_items_at   (GooCanvasItem   *item,
 						   gboolean         is_pointer_event,
 						   gboolean         parent_is_visible,
 						   GList           *found_items);
+GOOCANVAS_API
 gboolean           goo_canvas_item_is_visible     (GooCanvasItem   *item);
 
+GOOCANVAS_API
 GooCanvasItemModel* goo_canvas_item_get_model	  (GooCanvasItem      *item);
+GOOCANVAS_API
 void                goo_canvas_item_set_model	  (GooCanvasItem      *item,
 						   GooCanvasItemModel *model);
 
+GOOCANVAS_API
 void               goo_canvas_item_request_update (GooCanvasItem   *item);
+GOOCANVAS_API
 void		   goo_canvas_item_ensure_updated (GooCanvasItem   *item);
+GOOCANVAS_API
 void               goo_canvas_item_update         (GooCanvasItem   *item,
 						   gboolean         entire_tree,
 						   cairo_t         *cr,
 						   GooCanvasBounds *bounds);
+GOOCANVAS_API
 void               goo_canvas_item_paint          (GooCanvasItem         *item,
 						   cairo_t               *cr,
 						   const GooCanvasBounds *bounds,
 						   gdouble                scale);
 
+GOOCANVAS_API
 gboolean	   goo_canvas_item_get_requested_area (GooCanvasItem	*item,
 						       cairo_t          *cr,
 						       GooCanvasBounds  *requested_area);
+GOOCANVAS_API
 gboolean	   goo_canvas_item_get_requested_area_for_width (GooCanvasItem	*item,
 								 cairo_t          *cr,
 								 gdouble           width,
 								 GooCanvasBounds  *requested_area);
+GOOCANVAS_API
 gdouble            goo_canvas_item_get_requested_height (GooCanvasItem  *item,
 							 cairo_t	*cr,
 							 gdouble         width);
+GOOCANVAS_API
 void		   goo_canvas_item_allocate_area      (GooCanvasItem	     *item,
 						       cairo_t               *cr,
 						       const GooCanvasBounds *requested_area,
@@ -468,7 +517,9 @@ void		   goo_canvas_item_allocate_area      (GooCanvasItem	     *item,
 						       gdouble                x_offset,
 						       gdouble                y_offset);
 
+GOOCANVAS_API
 gboolean	   goo_canvas_item_get_is_static	(GooCanvasItem		*item);
+GOOCANVAS_API
 void		   goo_canvas_item_set_is_static	(GooCanvasItem		*item,
 							 gboolean		 is_static);
 
@@ -476,11 +527,14 @@ void		   goo_canvas_item_set_is_static	(GooCanvasItem		*item,
 /*
  * Functions to support child properties when implementing new canvas items.
  */
+GOOCANVAS_API
 void         goo_canvas_item_class_install_child_property (GObjectClass *iclass,
 							   guint	 property_id,
 							   GParamSpec	*pspec);
+GOOCANVAS_API
 GParamSpec*  goo_canvas_item_class_find_child_property	  (GObjectClass	*iclass,
 							   const gchar	*property_name);
+GOOCANVAS_API
 GParamSpec** goo_canvas_item_class_list_child_properties  (GObjectClass	*iclass,
 							   guint	*n_properties);
 

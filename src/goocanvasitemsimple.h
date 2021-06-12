@@ -160,30 +160,40 @@ struct _GooCanvasItemSimpleClass
 };
 
 
+GOOCANVAS_API
 GType    goo_canvas_item_simple_get_type		(void) G_GNUC_CONST;
 
 
+GOOCANVAS_API
 void     goo_canvas_item_simple_get_path_bounds		(GooCanvasItemSimple	*item,
 							 cairo_t		*cr,
 							 GooCanvasBounds	*bounds);
+GOOCANVAS_API
 void     goo_canvas_item_simple_user_bounds_to_device	(GooCanvasItemSimple	*item,
 							 cairo_t		*cr,
 							 GooCanvasBounds	*bounds);
+GOOCANVAS_API
 void     goo_canvas_item_simple_user_bounds_to_parent	(GooCanvasItemSimple	*item,
 							 cairo_t		*cr,
 							 GooCanvasBounds	*bounds);
+GOOCANVAS_API
 gboolean goo_canvas_item_simple_check_in_path		(GooCanvasItemSimple	*item,
 							 gdouble		 x,
 							 gdouble		 y,
 							 cairo_t		*cr,
 							 GooCanvasPointerEvents  pointer_events);
+GOOCANVAS_API
 void     goo_canvas_item_simple_paint_path		(GooCanvasItemSimple	*item,
 							 cairo_t		*cr);
 
+GOOCANVAS_API
 void     goo_canvas_item_simple_changed			(GooCanvasItemSimple	*item,
 							 gboolean		 recompute_bounds);
+GOOCANVAS_API
 void     goo_canvas_item_simple_check_style		(GooCanvasItemSimple	*item);
+GOOCANVAS_API
 gdouble  goo_canvas_item_simple_get_line_width		(GooCanvasItemSimple   *item);
+GOOCANVAS_API
 void	 goo_canvas_item_simple_set_model		(GooCanvasItemSimple	*item,
 							 GooCanvasItemModel	*model);
 
@@ -239,6 +249,7 @@ struct _GooCanvasItemModelSimpleClass
 };
 
 
+GOOCANVAS_API
 GType    goo_canvas_item_model_simple_get_type  (void) G_GNUC_CONST;
 
 

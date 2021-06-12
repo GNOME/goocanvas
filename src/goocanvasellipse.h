@@ -58,8 +58,10 @@ struct _GooCanvasEllipseClass
 };
 
 
+GOOCANVAS_API
 GType               goo_canvas_ellipse_get_type  (void) G_GNUC_CONST;
 
+GOOCANVAS_API
 GooCanvasItem*      goo_canvas_ellipse_new	 (GooCanvasItem      *parent,
 						  gdouble             center_x,
 						  gdouble             center_y,
@@ -106,8 +108,10 @@ struct _GooCanvasEllipseModelClass
 };
 
 
+GOOCANVAS_API
 GType               goo_canvas_ellipse_model_get_type  (void) G_GNUC_CONST;
 
+GOOCANVAS_API
 GooCanvasItemModel* goo_canvas_ellipse_model_new (GooCanvasItemModel *parent,
 						  gdouble             center_x,
 						  gdouble             center_y,

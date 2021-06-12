@@ -59,8 +59,10 @@ struct _GooCanvasPathClass
 };
 
 
+GOOCANVAS_API
 GType               goo_canvas_path_get_type  (void) G_GNUC_CONST;
 
+GOOCANVAS_API
 GooCanvasItem*      goo_canvas_path_new       (GooCanvasItem      *parent,
 					       const gchar        *path_data,
 					       ...);
@@ -104,8 +106,10 @@ struct _GooCanvasPathModelClass
 };
 
 
+GOOCANVAS_API
 GType               goo_canvas_path_model_get_type  (void) G_GNUC_CONST;
 
+GOOCANVAS_API
 GooCanvasItemModel* goo_canvas_path_model_new (GooCanvasItemModel *parent,
 					       const gchar        *path_data,
 					       ...);

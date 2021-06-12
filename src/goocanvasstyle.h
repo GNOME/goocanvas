@@ -8,23 +8,24 @@
 #define __GOO_CANVAS_STYLE_H__
 
 #include <gtk/gtk.h>
+#include "goocanvasexports.h"
 
 G_BEGIN_DECLS
 
 
 /* GQuarks for the basic properties. */
-extern GQuark goo_canvas_style_stroke_pattern_id;
-extern GQuark goo_canvas_style_fill_pattern_id;
-extern GQuark goo_canvas_style_fill_rule_id;
-extern GQuark goo_canvas_style_operator_id;
-extern GQuark goo_canvas_style_antialias_id;
-extern GQuark goo_canvas_style_line_width_id;
-extern GQuark goo_canvas_style_line_cap_id;
-extern GQuark goo_canvas_style_line_join_id;
-extern GQuark goo_canvas_style_line_join_miter_limit_id;
-extern GQuark goo_canvas_style_line_dash_id;
-extern GQuark goo_canvas_style_font_desc_id;
-extern GQuark goo_canvas_style_hint_metrics_id;
+GOOCANVAS_EXTERNAL_V GQuark goo_canvas_style_stroke_pattern_id;
+GOOCANVAS_EXTERNAL_V GQuark goo_canvas_style_fill_pattern_id;
+GOOCANVAS_EXTERNAL_V GQuark goo_canvas_style_fill_rule_id;
+GOOCANVAS_EXTERNAL_V GQuark goo_canvas_style_operator_id;
+GOOCANVAS_EXTERNAL_V GQuark goo_canvas_style_antialias_id;
+GOOCANVAS_EXTERNAL_V GQuark goo_canvas_style_line_width_id;
+GOOCANVAS_EXTERNAL_V GQuark goo_canvas_style_line_cap_id;
+GOOCANVAS_EXTERNAL_V GQuark goo_canvas_style_line_join_id;
+GOOCANVAS_EXTERNAL_V GQuark goo_canvas_style_line_join_miter_limit_id;
+GOOCANVAS_EXTERNAL_V GQuark goo_canvas_style_line_dash_id;
+GOOCANVAS_EXTERNAL_V GQuark goo_canvas_style_font_desc_id;
+GOOCANVAS_EXTERNAL_V GQuark goo_canvas_style_hint_metrics_id;
 
 
 /**
@@ -85,23 +86,32 @@ struct _GooCanvasStyleClass
 };
 
 
+GOOCANVAS_API
 GType           goo_canvas_style_get_type           (void) G_GNUC_CONST;
+GOOCANVAS_API
 GooCanvasStyle* goo_canvas_style_new                (void);
+GOOCANVAS_API
 GooCanvasStyle* goo_canvas_style_copy               (GooCanvasStyle *style);
 
+GOOCANVAS_API
 GooCanvasStyle* goo_canvas_style_get_parent         (GooCanvasStyle *style);
+GOOCANVAS_API
 void            goo_canvas_style_set_parent         (GooCanvasStyle *style,
 						     GooCanvasStyle *parent);
 
+GOOCANVAS_API
 GValue*         goo_canvas_style_get_property       (GooCanvasStyle *style,
 						     GQuark          property_id);
+GOOCANVAS_API
 void            goo_canvas_style_set_property	    (GooCanvasStyle *style,
 						     GQuark          property_id,
 						     const GValue   *value);
 
 /* Convenience functions to set the standard cairo stroke and fill options. */
+GOOCANVAS_API
 gboolean        goo_canvas_style_set_stroke_options (GooCanvasStyle *style,
 						     cairo_t        *cr);
+GOOCANVAS_API
 gboolean        goo_canvas_style_set_fill_options   (GooCanvasStyle *style,
 						     cairo_t        *cr);
 
