@@ -1,0 +1,1219 @@
+# Chinese (China) translation for goocanvas.
+# Copyright (C) 2021 goocanvas's COPYRIGHT HOLDER
+# This file is distributed under the same license as the goocanvas package.
+# D <afecr@foxmail.com>, 2021.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: goocanvas master\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/goocanvas/issues\n"
+"POT-Creation-Date: 2021-05-05 10:31+0000\n"
+"PO-Revision-Date: 2021-05-18 16:00+0800\n"
+"Last-Translator: D <afecr@foxmail.com>\n"
+"Language-Team: Chinese - China <i18n-zh@googlegroups.com>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"X-Generator: Gtranslator 40.0\n"
+
+#: src/goocanvas.c:309
+msgid "Scale"
+msgstr "缩放"
+
+#: src/goocanvas.c:310
+msgid "The magnification factor of the canvas"
+msgstr "画布的放大系数"
+
+#: src/goocanvas.c:316
+msgid "Scale X"
+msgstr "缩放 X"
+
+#: src/goocanvas.c:317
+msgid "The horizontal magnification factor of the canvas"
+msgstr "画布的水平放大系数"
+
+#: src/goocanvas.c:323
+msgid "Scale Y"
+msgstr "缩放 Y"
+
+#: src/goocanvas.c:324
+msgid "The vertical magnification factor of the canvas"
+msgstr "画布的垂直放大系数"
+
+#: src/goocanvas.c:330 src/goocanvastext.c:158 src/goocanvaswidget.c:587
+msgid "Anchor"
+msgstr "锚"
+
+#: src/goocanvas.c:331
+msgid ""
+"Where to place the canvas when it is smaller than the widget's allocated area"
+msgstr "当画布小于部件的分配区域时将其放置在何处"
+
+#: src/goocanvas.c:338
+msgid "X1"
+msgstr "X1"
+
+#: src/goocanvas.c:339
+msgid "The x coordinate of the left edge of the canvas bounds, in canvas units"
+msgstr "画布边界左侧边缘的 X 坐标，单位为画布单位"
+
+#: src/goocanvas.c:346
+msgid "Y1"
+msgstr "Y1"
+
+#: src/goocanvas.c:347
+msgid "The y coordinate of the top edge of the canvas bounds, in canvas units"
+msgstr "画布边界顶部边缘的 Y 坐标，单位为画布单位"
+
+#: src/goocanvas.c:354
+msgid "X2"
+msgstr "X2"
+
+#: src/goocanvas.c:355
+msgid ""
+"The x coordinate of the right edge of the canvas bounds, in canvas units"
+msgstr "画布边界右侧边缘的 X 坐标，单位为画布单位"
+
+#: src/goocanvas.c:363
+msgid "Y2"
+msgstr "Y2"
+
+#: src/goocanvas.c:364
+msgid ""
+"The y coordinate of the bottom edge of the canvas bounds, in canvas units"
+msgstr "画布边界底部边缘的 Y 坐标，单位为画布单位"
+
+#: src/goocanvas.c:373
+msgid "Automatic Bounds"
+msgstr "自动边界"
+
+#: src/goocanvas.c:374
+msgid ""
+"If the bounds are automatically calculated based on the bounds of all the "
+"items in the canvas"
+msgstr "是否根据画布中所有项目的边界自动计算边界"
+
+#: src/goocanvas.c:380
+msgid "Bounds From Origin"
+msgstr "原点边界"
+
+#: src/goocanvas.c:381
+msgid "If the automatic bounds are calculated from the origin"
+msgstr "自动边界是否从原点计算"
+
+#: src/goocanvas.c:387
+msgid "Bounds Padding"
+msgstr "边界边距"
+
+#: src/goocanvas.c:388
+msgid "The padding added to the automatic bounds"
+msgstr "添加到自动边界的边距"
+
+#: src/goocanvas.c:394
+msgid "Units"
+msgstr "单位"
+
+#: src/goocanvas.c:395
+msgid "The units to use for the canvas"
+msgstr "画布要使用的单位"
+
+#: src/goocanvas.c:402
+msgid "Resolution X"
+msgstr "分辨率 X"
+
+#: src/goocanvas.c:403
+msgid "The horizontal resolution of the display, in dots per inch"
+msgstr "显示器的水平分辨率，单位为每英寸点数"
+
+#: src/goocanvas.c:410
+msgid "Resolution Y"
+msgstr "分辨率 Y"
+
+#: src/goocanvas.c:411
+msgid "The vertical resolution of the display, in dots per inch"
+msgstr "显示器的垂直分辨率，单位为每英寸点数"
+
+#: src/goocanvas.c:419
+msgid "Background Color"
+msgstr "背景颜色"
+
+#: src/goocanvas.c:420
+msgid "The color to use for the canvas background"
+msgstr "画布背景要使用的颜色"
+
+#: src/goocanvas.c:426
+msgid "Background Color RGB"
+msgstr "背景颜色 RGB"
+
+#: src/goocanvas.c:427
+msgid ""
+"The color to use for the canvas background, specified as a 24-bit integer "
+"value, 0xRRGGBB"
+msgstr "画布背景要使用的颜色，由 24 位整数值指定，0xRRGGBB"
+
+#: src/goocanvas.c:440
+msgid "Background Color GdkRGBA"
+msgstr "背景颜色 GdkRGBA"
+
+#: src/goocanvas.c:441
+msgid "The color to use for the canvas background, specified as a GdkRGBA"
+msgstr "画布背景要使用的颜色，由 GdkRGBA 指定"
+
+#: src/goocanvas.c:447
+msgid "Integer Layout"
+msgstr "整数布局"
+
+#: src/goocanvas.c:448
+msgid "If all item layout is done to the nearest integer"
+msgstr "是否将所有项目布局设置为最接近的整数"
+
+#: src/goocanvas.c:454
+msgid "Clear Background"
+msgstr "清除背景"
+
+#: src/goocanvas.c:455
+msgid "If the background is cleared before the canvas is painted"
+msgstr "是否在绘制画布之前清除背景"
+
+#: src/goocanvas.c:461
+msgid "Redraw When Scrolled"
+msgstr "滚动时重绘"
+
+#: src/goocanvas.c:462
+msgid ""
+"If the canvas is completely redrawn when scrolled, to reduce the flicker of "
+"static items. Note that since GTK+ 3.0 the canvas is always redrawn when "
+"scrolled, so this option has no effect."
+msgstr ""
+"是否在滚动时完全重绘画布，以减少静止项目的闪烁。注意，由于从 GTK+ 3.0 以后，"
+"在滚动时总是重绘画布，所以此选项没有效果。"
+
+#: src/goocanvasellipse.c:77
+msgid "Center X"
+msgstr "中心 X"
+
+#: src/goocanvasellipse.c:78
+msgid "The x coordinate of the center of the ellipse"
+msgstr "椭圆中心的 x 坐标"
+
+#: src/goocanvasellipse.c:85
+msgid "Center Y"
+msgstr "中心 Y"
+
+#: src/goocanvasellipse.c:86
+msgid "The y coordinate of the center of the ellipse"
+msgstr "椭圆中心的 y 坐标"
+
+#: src/goocanvasellipse.c:93 src/goocanvasrect.c:90
+msgid "Radius X"
+msgstr "半径 X"
+
+#: src/goocanvasellipse.c:94
+msgid "The horizontal radius of the ellipse"
+msgstr "椭圆的水平半径"
+
+#: src/goocanvasellipse.c:100 src/goocanvasrect.c:97
+msgid "Radius Y"
+msgstr "半径 Y"
+
+#: src/goocanvasellipse.c:101
+msgid "The vertical radius of the ellipse"
+msgstr "椭圆的垂直半径"
+
+#: src/goocanvasellipse.c:108
+msgid "The x coordinate of the left side of the ellipse"
+msgstr "椭圆左端的 x 坐标"
+
+#: src/goocanvasellipse.c:116
+msgid "The y coordinate of the top of the ellipse"
+msgstr "椭圆顶部的 y 坐标"
+
+#: src/goocanvasellipse.c:123 src/goocanvasgrid.c:127 src/goocanvasgroup.c:106
+#: src/goocanvasimage.c:115 src/goocanvaspath.c:93 src/goocanvaspolyline.c:246
+#: src/goocanvasrect.c:76 src/goocanvastext.c:141 src/goocanvaswidget.c:570
+msgid "Width"
+msgstr "宽度"
+
+#: src/goocanvasellipse.c:124
+msgid "The width of the ellipse"
+msgstr "椭圆的宽度"
+
+#: src/goocanvasellipse.c:130 src/goocanvasgrid.c:134 src/goocanvasgroup.c:114
+#: src/goocanvasimage.c:122 src/goocanvaspath.c:100 src/goocanvaspolyline.c:253
+#: src/goocanvasrect.c:83 src/goocanvastext.c:149 src/goocanvaswidget.c:578
+msgid "Height"
+msgstr "高度"
+
+#: src/goocanvasellipse.c:131
+msgid "The height of the ellipse"
+msgstr "椭圆的高度"
+
+#: src/goocanvasgrid.c:112
+msgid "The x coordinate of the grid"
+msgstr "网格的 x 坐标"
+
+#: src/goocanvasgrid.c:120
+msgid "The y coordinate of the grid"
+msgstr "网格的 y 坐标"
+
+#: src/goocanvasgrid.c:128
+msgid "The width of the grid"
+msgstr "网格的宽度"
+
+#: src/goocanvasgrid.c:135
+msgid "The height of the grid"
+msgstr "网格的高度"
+
+#: src/goocanvasgrid.c:142
+msgid "The distance between the vertical grid lines"
+msgstr "垂直网格线之间的距离"
+
+#: src/goocanvasgrid.c:149
+msgid "The distance between the horizontal grid lines"
+msgstr "水平网格线之间的距离"
+
+#: src/goocanvasgrid.c:156
+msgid "The distance before the first vertical grid line"
+msgstr "第一条垂直网格线之前的距离"
+
+#: src/goocanvasgrid.c:163
+msgid "The distance before the first horizontal grid line"
+msgstr "第一条水平网格线之前的距离"
+
+#: src/goocanvasgrid.c:169 src/goocanvastable.c:276
+msgid "Horizontal Grid Line Width"
+msgstr "水平网格线宽度"
+
+#: src/goocanvasgrid.c:170
+msgid "The width of the horizontal grid lines"
+msgstr "水平网格线的宽度"
+
+#: src/goocanvasgrid.c:177 src/goocanvastable.c:283
+msgid "Vertical Grid Line Width"
+msgstr "垂直网格线宽度"
+
+#: src/goocanvasgrid.c:178
+msgid "The width of the vertical grid lines"
+msgstr "垂直网格线的宽度"
+
+#: src/goocanvasgrid.c:185
+msgid "Horizontal Grid Line Pattern"
+msgstr "水平网格线图案"
+
+#: src/goocanvasgrid.c:186
+msgid "The cairo pattern to paint the horizontal grid lines with"
+msgstr "用于绘制水平网格线的 cairo 图案"
+
+#: src/goocanvasgrid.c:192
+msgid "Vertical Grid Line Pattern"
+msgstr "垂直网格线图案"
+
+#: src/goocanvasgrid.c:193
+msgid "The cairo pattern to paint the vertical grid lines with"
+msgstr "用于绘制垂直网格线的 cairo 图案"
+
+#: src/goocanvasgrid.c:199
+msgid "Border Width"
+msgstr "边框宽度"
+
+#: src/goocanvasgrid.c:200
+msgid "The width of the border around the grid"
+msgstr "网格周围边框的宽度"
+
+#: src/goocanvasgrid.c:207
+msgid "Border Pattern"
+msgstr "边框图案"
+
+#: src/goocanvasgrid.c:208
+msgid "The cairo pattern to paint the border with"
+msgstr "用于绘制边框的 cairo 图案"
+
+#: src/goocanvasgrid.c:214
+msgid "Show Horizontal Grid Lines"
+msgstr "显示水平网格线"
+
+#: src/goocanvasgrid.c:215
+msgid "If the horizontal grid lines are shown"
+msgstr "是否显示水平网格线"
+
+#: src/goocanvasgrid.c:221
+msgid "Show Vertical Grid Lines"
+msgstr "显示垂直网格线"
+
+#: src/goocanvasgrid.c:222
+msgid "If the vertical grid lines are shown"
+msgstr "是否显示垂直网格线"
+
+#: src/goocanvasgrid.c:228
+msgid "Vertical Grid Lines On Top"
+msgstr "垂直网格线在顶部"
+
+#: src/goocanvasgrid.c:229
+msgid "If the vertical grid lines are painted above the horizontal grid lines"
+msgstr "是否将垂直网格线绘制在水平网格线的上方"
+
+#: src/goocanvasgrid.c:237
+msgid "Horizontal Grid Line Color"
+msgstr "水平网格线颜色"
+
+#: src/goocanvasgrid.c:238
+msgid "The color to use for the horizontal grid lines"
+msgstr "水平网格线要使用的颜色"
+
+#: src/goocanvasgrid.c:244
+msgid "Horizontal Grid Line Color RGBA"
+msgstr "水平网格线颜色 RGBA"
+
+#: src/goocanvasgrid.c:245
+msgid ""
+"The color to use for the horizontal grid lines, specified as a 32-bit "
+"integer value"
+msgstr "水平网格线要使用的颜色，由 32 位整数值指定"
+
+#: src/goocanvasgrid.c:258
+msgid "Horizontal Grid Line Color GdkRGBA"
+msgstr "水平网格线颜色 GdkRGBA"
+
+#: src/goocanvasgrid.c:259
+msgid "The color to use for the horizontal grid lines, specified as a GdkRGBA"
+msgstr "水平网格线要使用的颜色，由 GdkRGBA 指定"
+
+#: src/goocanvasgrid.c:265
+msgid "Horizontal Grid Line Pixbuf"
+msgstr "水平网格线 Pixbuf"
+
+#: src/goocanvasgrid.c:266
+msgid "The pixbuf to use to draw the horizontal grid lines"
+msgstr "用于绘制水平网格线的 pixbuf"
+
+#: src/goocanvasgrid.c:272
+msgid "Vertical Grid Line Color"
+msgstr "垂直网格线颜色"
+
+#: src/goocanvasgrid.c:273
+msgid "The color to use for the vertical grid lines"
+msgstr "垂直网格线要使用的颜色"
+
+#: src/goocanvasgrid.c:279
+msgid "Vertical Grid Line Color RGBA"
+msgstr "垂直网格线颜色 RGBA"
+
+#: src/goocanvasgrid.c:280
+msgid ""
+"The color to use for the vertical grid lines, specified as a 32-bit integer "
+"value"
+msgstr "垂直网格线要使用的颜色，由 32 位整数值指定"
+
+#: src/goocanvasgrid.c:293
+msgid "Vertical Grid Line Color GdkRGBA"
+msgstr "垂直网格线颜色 GdkRGBA"
+
+#: src/goocanvasgrid.c:294
+msgid "The color to use for the vertical grid lines, specified as a GdkRGBA"
+msgstr "垂直网格线要使用的颜色，由 GdkRGBA 指定"
+
+#: src/goocanvasgrid.c:300
+msgid "Vertical Grid Line Pixbuf"
+msgstr "垂直网格线 Pixbuf"
+
+#: src/goocanvasgrid.c:301
+msgid "The pixbuf to use to draw the vertical grid lines"
+msgstr "用于绘制垂直网格线的 pixbuf"
+
+#: src/goocanvasgrid.c:307
+msgid "Border Color"
+msgstr "边框颜色"
+
+#: src/goocanvasgrid.c:308
+msgid "The color to use for the border"
+msgstr "边框要使用的颜色"
+
+#: src/goocanvasgrid.c:314
+msgid "Border Color RGBA"
+msgstr "边框颜色 RGBA"
+
+#: src/goocanvasgrid.c:315
+msgid "The color to use for the border, specified as a 32-bit integer value"
+msgstr "边框要使用的颜色，由 32 位整数值指定"
+
+#: src/goocanvasgrid.c:328
+msgid "Border Color GdkRGBA"
+msgstr "边框颜色 GdkRGBA"
+
+#: src/goocanvasgrid.c:329
+msgid "The color to use for the border, specified as a GdkRGBA"
+msgstr "边框要使用的颜色，由 GdkRGBA 指定"
+
+#: src/goocanvasgrid.c:335
+msgid "Border Pixbuf"
+msgstr "边框 Pixbuf"
+
+#: src/goocanvasgrid.c:336
+msgid "The pixbuf to use to draw the border"
+msgstr "用于绘制边框的 pixbuf"
+
+#: src/goocanvasgroup.c:91
+msgid "The x coordinate of the group"
+msgstr "组的 x 坐标"
+
+#: src/goocanvasgroup.c:99
+msgid "The y coordinate of the group"
+msgstr "组的 y 坐标"
+
+#: src/goocanvasgroup.c:107
+msgid "The width of the group, or -1 to use the default width"
+msgstr "组的宽度，或为 -1 表示使用默认宽度"
+
+#: src/goocanvasgroup.c:115
+msgid "The height of the group, or -1 to use the default height"
+msgstr "组的高度，或为 -1 表示使用默认高度"
+
+#: src/goocanvasimage.c:92
+msgid "Pattern"
+msgstr "图案"
+
+#: src/goocanvasimage.c:93
+msgid "The cairo pattern to paint"
+msgstr "要绘制的 cairo 图案"
+
+#: src/goocanvasimage.c:100
+msgid "The x coordinate of the image"
+msgstr "图像的 x 坐标"
+
+#: src/goocanvasimage.c:108
+msgid "The y coordinate of the image"
+msgstr "图像的 y 坐标"
+
+#: src/goocanvasimage.c:116
+msgid "The width of the image"
+msgstr "图像的宽度"
+
+#: src/goocanvasimage.c:123
+msgid "The height of the image"
+msgstr "图像的高度"
+
+#: src/goocanvasimage.c:129
+msgid "Scale To Fit"
+msgstr "缩放以适应"
+
+#: src/goocanvasimage.c:130
+msgid "If the image is scaled to fit the width and height settings"
+msgstr "是否缩放图像以适应宽度和高度设置"
+
+#: src/goocanvasimage.c:136
+msgid "Alpha"
+msgstr "Alpha"
+
+#: src/goocanvasimage.c:137
+msgid "The opacity of the image, 0.0 is fully transparent, and 1.0 is opaque."
+msgstr "图像的不透明度，0.0 表示完全透明，1.0 表示不透明。"
+
+#: src/goocanvasimage.c:143
+msgid "Pixbuf"
+msgstr "Pixbuf"
+
+#: src/goocanvasimage.c:144
+msgid "The GdkPixbuf to display"
+msgstr "要显示的 GdkPixbuf"
+
+#: src/goocanvasitem.c:467 src/goocanvasitemmodel.c:224
+msgid "Parent"
+msgstr "父项"
+
+#: src/goocanvasitem.c:468
+msgid "The parent item"
+msgstr "父项目"
+
+#: src/goocanvasitem.c:474 src/goocanvasitemmodel.c:231
+msgid "Visibility"
+msgstr "可见性"
+
+#: src/goocanvasitem.c:475 src/goocanvasitemmodel.c:232
+msgid "When the canvas item is visible"
+msgstr "画布项目何时可见"
+
+#: src/goocanvasitem.c:482 src/goocanvasitemmodel.c:239
+msgid "Visibility Threshold"
+msgstr "可见性阈值"
+
+#: src/goocanvasitem.c:483 src/goocanvasitemmodel.c:240
+msgid "The scale threshold at which the item becomes visible"
+msgstr "使项目变为可见的缩放阈值"
+
+#: src/goocanvasitem.c:491 src/goocanvasitemmodel.c:248
+msgid "Transform"
+msgstr "变换"
+
+#: src/goocanvasitem.c:492 src/goocanvasitemmodel.c:249
+msgid "The transformation matrix of the item"
+msgstr "项目的变换矩阵"
+
+#: src/goocanvasitem.c:498 src/goocanvasitemmodel.c:255
+msgid "Pointer Events"
+msgstr "指针事件"
+
+#: src/goocanvasitem.c:499 src/goocanvasitemmodel.c:256
+msgid "Specifies when the item receives pointer events"
+msgstr "指定项目何时接收指针事件"
+
+#: src/goocanvasitem.c:506 src/goocanvasitemmodel.c:263
+msgid "Title"
+msgstr "标题"
+
+#: src/goocanvasitem.c:507 src/goocanvasitemmodel.c:264
+msgid ""
+"A short context-rich description of the item for use by assistive "
+"technologies"
+msgstr "简短的上下文丰富的项目描述，供辅助技术使用"
+
+#: src/goocanvasitem.c:513 src/goocanvasitemmodel.c:270
+msgid "Description"
+msgstr "描述"
+
+#: src/goocanvasitem.c:514 src/goocanvasitemmodel.c:271
+msgid "A description of the item for use by assistive technologies"
+msgstr "项目的描述，供辅助技术使用"
+
+#: src/goocanvasitem.c:520 src/goocanvasitemmodel.c:277
+msgid "Can Focus"
+msgstr "可以聚焦"
+
+#: src/goocanvasitem.c:521 src/goocanvasitemmodel.c:278
+msgid "If the item can take the keyboard focus"
+msgstr "项目是否可以取得键盘焦点"
+
+#: src/goocanvasitem.c:536 src/goocanvasitemmodel.c:284
+msgid "Tooltip"
+msgstr "工具提示"
+
+#: src/goocanvasitem.c:537 src/goocanvasitemmodel.c:285
+msgid "The tooltip to display for the item"
+msgstr "要为项目显示的工具提示"
+
+#: src/goocanvasitemmodel.c:225
+msgid "The parent item model"
+msgstr "父项目模型"
+
+#: src/goocanvasitemsimple.c:128
+msgid "Stroke Pattern"
+msgstr "线条图案"
+
+#: src/goocanvasitemsimple.c:129
+msgid ""
+"The pattern to use to paint the perimeter of the item, or NULL disable "
+"painting"
+msgstr "用于绘制项目外缘的图案，或为 NULL 表示禁用绘制"
+
+#: src/goocanvasitemsimple.c:135
+msgid "Fill Pattern"
+msgstr "填充图案"
+
+#: src/goocanvasitemsimple.c:136
+msgid ""
+"The pattern to use to paint the interior of the item, or NULL to disable "
+"painting"
+msgstr "用于绘制项目内部的图案，或为 NULL 表示禁用绘制"
+
+#: src/goocanvasitemsimple.c:142
+msgid "Fill Rule"
+msgstr "填充规则"
+
+#: src/goocanvasitemsimple.c:143
+msgid "The fill rule used to determine which parts of the item are filled"
+msgstr "用于确定要填充项目的哪些部分的填充规则"
+
+#: src/goocanvasitemsimple.c:150
+msgid "Operator"
+msgstr "运算符"
+
+#: src/goocanvasitemsimple.c:151
+msgid "The compositing operator to use"
+msgstr "要使用的合成运算符"
+
+#: src/goocanvasitemsimple.c:158
+msgid "Antialias"
+msgstr "抗锯齿"
+
+#: src/goocanvasitemsimple.c:159
+msgid "The antialiasing mode to use"
+msgstr "要使用的抗锯齿模式"
+
+#: src/goocanvasitemsimple.c:167
+msgid "Line Width"
+msgstr "线宽度"
+
+#: src/goocanvasitemsimple.c:168
+msgid "The line width to use for the item's perimeter"
+msgstr "项目外缘要使用的线宽度"
+
+#: src/goocanvasitemsimple.c:174
+msgid "Line Cap"
+msgstr "线帽"
+
+#: src/goocanvasitemsimple.c:175
+msgid "The line cap style to use"
+msgstr "要使用的线帽样式"
+
+#: src/goocanvasitemsimple.c:182
+msgid "Line Join"
+msgstr "线连接"
+
+#: src/goocanvasitemsimple.c:183
+msgid "The line join style to use"
+msgstr "要使用的线连接样式"
+
+#: src/goocanvasitemsimple.c:190
+msgid "Miter Limit"
+msgstr "斜接极限"
+
+#: src/goocanvasitemsimple.c:191
+msgid ""
+"The smallest angle to use with miter joins, in degrees. Bevel joins will be "
+"used below this limit"
+msgstr "使用斜接的最小角度，单位为度。低于此极限时将使用倒角连接"
+
+#: src/goocanvasitemsimple.c:197
+msgid "Line Dash"
+msgstr "虚线"
+
+#: src/goocanvasitemsimple.c:198
+msgid "The dash pattern to use"
+msgstr "要使用的虚线图案"
+
+#: src/goocanvasitemsimple.c:205
+msgid "Font"
+msgstr "字体"
+
+#: src/goocanvasitemsimple.c:206
+msgid "The base font to use for the text"
+msgstr "文本要使用的基本字体"
+
+#: src/goocanvasitemsimple.c:212
+msgid "Font Description"
+msgstr "字体描述"
+
+#: src/goocanvasitemsimple.c:213
+msgid "The attributes specifying which font to use"
+msgstr "指定要使用哪种字体的属性"
+
+#: src/goocanvasitemsimple.c:219
+msgid "Hint Metrics"
+msgstr "提示度量"
+
+#: src/goocanvasitemsimple.c:220
+msgid "The hinting to be used for font metrics"
+msgstr "用于字体度量的提示"
+
+#: src/goocanvasitemsimple.c:228
+msgid "Stroke Color"
+msgstr "线条颜色"
+
+#: src/goocanvasitemsimple.c:229
+msgid ""
+"The color to use for the item's perimeter. To disable painting set the "
+"'stroke-pattern' property to NULL"
+msgstr "项目外缘要使用的颜色。要禁用绘制，将“stroke-pattern”属性设置为 NULL"
+
+#: src/goocanvasitemsimple.c:235
+msgid "Stroke Color RGBA"
+msgstr "线条颜色 RGBA"
+
+#: src/goocanvasitemsimple.c:236
+msgid ""
+"The color to use for the item's perimeter, specified as a 32-bit integer "
+"value. To disable painting set the 'stroke-pattern' property to NULL"
+msgstr ""
+"项目外缘要使用的颜色，由 32 位整数值指定。要禁用绘制，将“stroke-pattern”属性"
+"设置为 NULL"
+
+#: src/goocanvasitemsimple.c:249
+msgid "Stroke Color GdkRGBA"
+msgstr "线条颜色 GdkRGBA"
+
+#: src/goocanvasitemsimple.c:250
+msgid ""
+"The color to use for the item's perimeter, specified as a GdkRGBA. To "
+"disable painting set the 'stroke-pattern' property to NULL"
+msgstr ""
+"项目外缘要使用的颜色，由 GdkRGBA 指定。要禁用绘制，将“stroke-pattern”属性设置"
+"为 NULL"
+
+#: src/goocanvasitemsimple.c:256
+msgid "Stroke Pixbuf"
+msgstr "线条 Pixbuf"
+
+#: src/goocanvasitemsimple.c:257
+msgid ""
+"The pixbuf to use to draw the item's perimeter. To disable painting set the "
+"'stroke-pattern' property to NULL"
+msgstr ""
+"用于绘制项目外缘的 pixbuf。要禁用绘制，将“stroke-pattern”属性设置为 NULL"
+
+#: src/goocanvasitemsimple.c:263
+msgid "Fill Color"
+msgstr "填充颜色"
+
+#: src/goocanvasitemsimple.c:264
+msgid ""
+"The color to use to paint the interior of the item. To disable painting set "
+"the 'fill-pattern' property to NULL"
+msgstr "用于绘制项目内部的颜色。要禁用绘制，将“fill-pattern”属性设置为 NULL"
+
+#: src/goocanvasitemsimple.c:270
+msgid "Fill Color RGBA"
+msgstr "填充颜色 RGBA"
+
+#: src/goocanvasitemsimple.c:271
+msgid ""
+"The color to use to paint the interior of the item, specified as a 32-bit "
+"integer value. To disable painting set the 'fill-pattern' property to NULL"
+msgstr ""
+"用于绘制项目内部的颜色，由 32 位整数值指定。要禁用绘制，将“fill-pattern”属性"
+"设置为 NULL"
+
+#: src/goocanvasitemsimple.c:284
+msgid "Fill Color GdkRGBA"
+msgstr "填充颜色 GdkRGBA"
+
+#: src/goocanvasitemsimple.c:285
+msgid ""
+"The color to use to paint the interior of the item, specified as a GdkRGBA. "
+"To disable painting set the 'fill-pattern' property to NULL"
+msgstr ""
+"用于绘制项目内部的颜色，由 GdkRGBA 指定。要禁用绘制，将“fill-pattern”属性设置"
+"为 NULL"
+
+#: src/goocanvasitemsimple.c:291
+msgid "Fill Pixbuf"
+msgstr "填充 Pixbuf"
+
+#: src/goocanvasitemsimple.c:292
+msgid ""
+"The pixbuf to use to paint the interior of the item. To disable painting set "
+"the 'fill-pattern' property to NULL"
+msgstr "用于绘制项目内部的 pixbuf。要禁用绘制，将“fill-pattern”属性设置为 NULL"
+
+#: src/goocanvasitemsimple.c:342
+msgid "Clip Path"
+msgstr "裁剪路径"
+
+#: src/goocanvasitemsimple.c:343
+msgid "The sequence of path commands specifying the clip path"
+msgstr "指定裁剪路径的路径命令序列"
+
+#: src/goocanvasitemsimple.c:349
+msgid "Clip Fill Rule"
+msgstr "裁剪填充规则"
+
+#: src/goocanvasitemsimple.c:350
+msgid "The fill rule used to determine which parts of the item are clipped"
+msgstr "用于确定要裁剪项目的哪些部分的填充规则"
+
+#: src/goocanvaspath.c:70
+msgid "Path Data"
+msgstr "路径数据"
+
+#: src/goocanvaspath.c:71
+msgid "The sequence of path commands"
+msgstr "路径命令序列"
+
+#: src/goocanvaspath.c:78
+msgid "The x coordinate of the path"
+msgstr "路径的 x 坐标"
+
+#: src/goocanvaspath.c:86
+msgid "The y coordinate of the path"
+msgstr "路径的 y 坐标"
+
+#: src/goocanvaspath.c:94
+msgid "The width of the path"
+msgstr "路径的宽度"
+
+#: src/goocanvaspath.c:101
+msgid "The height of the path"
+msgstr "路径的高度"
+
+#: src/goocanvaspolyline.c:181
+msgid "Points"
+msgstr "点"
+
+#: src/goocanvaspolyline.c:182
+msgid "The array of points"
+msgstr "点的数组"
+
+#: src/goocanvaspolyline.c:188
+msgid "Close Path"
+msgstr "封闭路径"
+
+#: src/goocanvaspolyline.c:189
+msgid "If the last point should be connected to the first"
+msgstr "最后一个点是否要连接到第一个点"
+
+#: src/goocanvaspolyline.c:195
+msgid "Start Arrow"
+msgstr "起点箭头"
+
+#: src/goocanvaspolyline.c:196
+msgid "If an arrow should be displayed at the start of the polyline"
+msgstr "是否要在折线的起点显示箭头"
+
+#: src/goocanvaspolyline.c:202
+msgid "End Arrow"
+msgstr "末端箭头"
+
+#: src/goocanvaspolyline.c:203
+msgid "If an arrow should be displayed at the end of the polyline"
+msgstr "是否要在折线的末端显示箭头"
+
+#: src/goocanvaspolyline.c:209
+msgid "Arrow Length"
+msgstr "箭头长度"
+
+#: src/goocanvaspolyline.c:210
+msgid "The length of the arrows, as a multiple of the line width"
+msgstr "箭头的长度，为线宽度的倍数"
+
+#: src/goocanvaspolyline.c:216
+msgid "Arrow Width"
+msgstr "箭头宽度"
+
+#: src/goocanvaspolyline.c:217
+msgid "The width of the arrows, as a multiple of the line width"
+msgstr "箭头的宽度，为线宽度的倍数"
+
+#: src/goocanvaspolyline.c:223
+msgid "Arrow Tip Length"
+msgstr "箭头尖端长度"
+
+#: src/goocanvaspolyline.c:224
+msgid "The length of the arrow tip, as a multiple of the line width"
+msgstr "箭头尖端的长度，为线宽度的倍数"
+
+#: src/goocanvaspolyline.c:231
+msgid "The x coordinate of the left-most point of the polyline"
+msgstr "折线最左端的点的 x 坐标"
+
+#: src/goocanvaspolyline.c:239
+msgid "The y coordinate of the top-most point of the polyline"
+msgstr "折线最顶部的点的 y 坐标"
+
+#: src/goocanvaspolyline.c:247
+msgid "The width of the polyline"
+msgstr "折线的宽度"
+
+#: src/goocanvaspolyline.c:254
+msgid "The height of the polyline"
+msgstr "折线的高度"
+
+#: src/goocanvasrect.c:61
+msgid "The x coordinate of the rectangle"
+msgstr "矩形的 x 坐标"
+
+#: src/goocanvasrect.c:69
+msgid "The y coordinate of the rectangle"
+msgstr "矩形的 y 坐标"
+
+#: src/goocanvasrect.c:77
+msgid "The width of the rectangle"
+msgstr "矩形的宽度"
+
+#: src/goocanvasrect.c:84
+msgid "The height of the rectangle"
+msgstr "矩形的高度"
+
+#: src/goocanvasrect.c:91
+msgid "The horizontal radius to use for rounded corners"
+msgstr "圆角要使用的水平半径"
+
+#: src/goocanvasrect.c:98
+msgid "The vertical radius to use for rounded corners"
+msgstr "圆角要使用的垂直半径"
+
+#: src/goocanvastable.c:237
+msgid "Row Spacing"
+msgstr "行间距"
+
+#: src/goocanvastable.c:238
+msgid "The default space between rows"
+msgstr "行之间的默认间距"
+
+#: src/goocanvastable.c:244
+msgid "Column Spacing"
+msgstr "列间距"
+
+#: src/goocanvastable.c:245
+msgid "The default space between columns"
+msgstr "列之间的默认间距"
+
+#: src/goocanvastable.c:251
+msgid "Homogenous Rows"
+msgstr "均匀行"
+
+#: src/goocanvastable.c:252
+msgid "If all rows are the same height"
+msgstr "所有行的高度是否相同"
+
+#: src/goocanvastable.c:258
+msgid "Homogenous Columns"
+msgstr "均匀列"
+
+#: src/goocanvastable.c:259
+msgid "If all columns are the same width"
+msgstr "所有列的宽度是否相同"
+
+#: src/goocanvastable.c:264
+msgid "X Border Spacing"
+msgstr "X 边框间距"
+
+#: src/goocanvastable.c:265
+msgid ""
+"The amount of spacing between the leftmost and rightmost cells and the "
+"border grid line"
+msgstr "最左端和最右端的单元格与边框网格线之间的间距量"
+
+#: src/goocanvastable.c:270
+msgid "Y Border Spacing"
+msgstr "Y 边框间距"
+
+#: src/goocanvastable.c:271
+msgid ""
+"The amount of spacing between the topmost and bottommost cells and the "
+"border grid line"
+msgstr "最顶部和最底部的单元格与边框网格线之间的间距量"
+
+#: src/goocanvastable.c:277
+msgid "The width of the grid line to draw between rows"
+msgstr "要在行之间绘制的网格线的宽度"
+
+#: src/goocanvastable.c:284
+msgid "The width of the grid line to draw between columns"
+msgstr "要在列之间绘制的网格线的宽度"
+
+#: src/goocanvastable.c:293
+msgid "Left Padding"
+msgstr "左边距"
+
+#: src/goocanvastable.c:294
+msgid "Extra space to add to the left of the item"
+msgstr "在项目左侧要添加的额外空间"
+
+#: src/goocanvastable.c:299
+msgid "Right Padding"
+msgstr "右边距"
+
+#: src/goocanvastable.c:300
+msgid "Extra space to add to the right of the item"
+msgstr "在项目右侧要添加的额外空间"
+
+#: src/goocanvastable.c:305
+msgid "Top Padding"
+msgstr "上边距"
+
+#: src/goocanvastable.c:306
+msgid "Extra space to add above the item"
+msgstr "在项目上方要添加的额外空间"
+
+#: src/goocanvastable.c:311
+msgid "Bottom Padding"
+msgstr "下边距"
+
+#: src/goocanvastable.c:312
+msgid "Extra space to add below the item"
+msgstr "在项目下方要添加的额外空间"
+
+#: src/goocanvastable.c:318
+msgid "X Align"
+msgstr "X 对齐"
+
+#: src/goocanvastable.c:319
+msgid ""
+"The horizontal position of the item within its allocated space. 0.0 is left-"
+"aligned, 1.0 is right-aligned"
+msgstr "项目在其分配空间内的水平位置。0.0 为左对齐，1.0 为右对齐"
+
+#: src/goocanvastable.c:324
+msgid "Y Align"
+msgstr "Y 对齐"
+
+#: src/goocanvastable.c:325
+msgid ""
+"The vertical position of the item within its allocated space. 0.0 is top-"
+"aligned, 1.0 is bottom-aligned"
+msgstr "项目在其分配空间内的垂直位置。0.0 为顶部对齐，1.0 为底部对齐"
+
+#: src/goocanvastable.c:331
+msgid "Row"
+msgstr "行"
+
+#: src/goocanvastable.c:332
+msgid "The row to place the item in"
+msgstr "要放置项目的行"
+
+#: src/goocanvastable.c:337
+msgid "Column"
+msgstr "列"
+
+#: src/goocanvastable.c:338
+msgid "The column to place the item in"
+msgstr "要放置项目的列"
+
+#: src/goocanvastable.c:343
+msgid "Rows"
+msgstr "行数"
+
+#: src/goocanvastable.c:344
+msgid "The number of rows that the item spans"
+msgstr "项目跨越的行数"
+
+#: src/goocanvastable.c:349
+msgid "Columns"
+msgstr "列数"
+
+#: src/goocanvastable.c:350
+msgid "The number of columns that the item spans"
+msgstr "项目跨越的列数"
+
+#: src/goocanvastable.c:356
+msgid "X Expand"
+msgstr "X 扩大"
+
+#: src/goocanvastable.c:357
+msgid "If the item expands horizontally as the table expands"
+msgstr "项目是否随着表格的扩大而水平扩大"
+
+#: src/goocanvastable.c:362
+msgid "X Fill"
+msgstr "X 填充"
+
+#: src/goocanvastable.c:363
+msgid "If the item fills all horizontal allocated space"
+msgstr "项目是否要填充所有的水平分配空间"
+
+#: src/goocanvastable.c:368
+msgid "X Shrink"
+msgstr "X 缩小"
+
+#: src/goocanvastable.c:369
+msgid "If the item can shrink smaller than its requested size horizontally"
+msgstr "项目是否可以在水平方向缩小为小于其要求的大小"
+
+#: src/goocanvastable.c:374
+msgid "Y Expand"
+msgstr "Y 扩大"
+
+#: src/goocanvastable.c:375
+msgid "If the item expands vertically as the table expands"
+msgstr "项目是否随着表格的扩大而垂直扩大"
+
+#: src/goocanvastable.c:380
+msgid "Y Fill"
+msgstr "Y 填充"
+
+#: src/goocanvastable.c:381
+msgid "If the item fills all vertical allocated space"
+msgstr "项目是否要填充所有的垂直分配空间"
+
+#: src/goocanvastable.c:386
+msgid "Y Shrink"
+msgstr "Y 缩小"
+
+#: src/goocanvastable.c:387
+msgid "If the item can shrink smaller than its requested size vertically"
+msgstr "项目是否可以在垂直方向缩小为小于其要求的大小"
+
+#: src/goocanvastext.c:94
+msgid "Text"
+msgstr "文本"
+
+#: src/goocanvastext.c:95
+msgid "The text to display"
+msgstr "要显示的文本"
+
+#: src/goocanvastext.c:101
+msgid "Use Markup"
+msgstr "使用标记"
+
+#: src/goocanvastext.c:102
+msgid "Whether to parse PangoMarkup in the text, to support different styles"
+msgstr "是否要解析文本中的 PangoMarkup，以支持不同的样式"
+
+#: src/goocanvastext.c:108
+msgid "Ellipsize"
+msgstr "省略化"
+
+#: src/goocanvastext.c:109
+msgid ""
+"The preferred place to ellipsize the string, if the label does not have "
+"enough room to display the entire string"
+msgstr "标签没有足够的空间来显示整个字符串时，字符串省略化的首选位置"
+
+#: src/goocanvastext.c:116
+msgid "Wrap"
+msgstr "换行"
+
+#: src/goocanvastext.c:117
+msgid "The preferred method of wrapping the string if a width has been set"
+msgstr "已设置宽度时，字符串换行的首选方法"
+
+#: src/goocanvastext.c:126
+msgid "The x coordinate of the text"
+msgstr "文本的 x 坐标"
+
+#: src/goocanvastext.c:134
+msgid "The y coordinate of the text"
+msgstr "文本的 y 坐标"
+
+#: src/goocanvastext.c:142
+msgid ""
+"The width to use to layout the text, or -1 to let the text use as much "
+"horizontal space as needed"
+msgstr "用于布局文本的宽度，或为 -1 表示使文本根据需要使用尽可能多的水平空间"
+
+#: src/goocanvastext.c:150
+msgid ""
+"The height to use to layout the text, or -1 to let the text use as much "
+"vertical space as needed"
+msgstr "用于布局文本的高度，或为 -1 表示使文本根据需要使用尽可能多的垂直空间"
+
+#: src/goocanvastext.c:159
+msgid "How to position the text relative to the given x and y coordinates"
+msgstr "如何相对于给定的 x 和 y 坐标来定位文本"
+
+#: src/goocanvastext.c:166
+msgid "Alignment"
+msgstr "对齐"
+
+#: src/goocanvastext.c:167
+msgid "How to align the text"
+msgstr "如何对齐文本"
+
+#: src/goocanvaswidget.c:547
+msgid "Widget"
+msgstr "部件"
+
+#: src/goocanvaswidget.c:548
+msgid "The widget to place in the canvas"
+msgstr "要放置在画布中的部件"
+
+#: src/goocanvaswidget.c:555
+msgid "The x coordinate of the widget"
+msgstr "部件的 x 坐标"
+
+#: src/goocanvaswidget.c:563
+msgid "The y coordinate of the widget"
+msgstr "部件的 y 坐标"
+
+#: src/goocanvaswidget.c:571
+msgid "The width of the widget, or -1 to use its requested width"
+msgstr "部件的宽度，或为 -1 表示使用其要求的宽度"
+
+#: src/goocanvaswidget.c:579
+msgid "The height of the widget, or -1 to use its requested height"
+msgstr "部件的高度，或为 -1 表示使用其要求的高度"
+
+#: src/goocanvaswidget.c:588
+msgid ""
+"How to position the widget relative to the item's x and y coordinate settings"
+msgstr "如何相对于项目的 x 和 y 坐标设置来定位部件"
